@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps - Explore Services</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Theme Toggle Script -->
+    <script src="assets/theme.js"></script>
+
+    <style>
+        .page-header {
+            padding: 120px 0 80px;
+            background-color: var(--bg-body);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .service-img {
+            height: 140px;
+            width: 100%;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--bg-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
+                <i class="bi bi-boxes fs-4"></i>
+                <span class="fs-4 tracking-tight text-body">Apps</span>
+            </a>
+
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="bi bi-list fs-1 text-body"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
+                        id="offcanvasNavbarLabel">
+                        <i class="bi bi-boxes"></i> <span class="text-body">Apps</span>
+                    </h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                        <a href="login.html" class="nav-link fw-bold">Login</a>
+                        <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
+                        <button
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            style="width: 40px; height: 40px;" aria-label="Toggle Theme">
+                            <i class="bi bi-moon fs-5 text-body"></i>
+                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <header class="page-header text-center">
+        <div class="container">
+            <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Our Services</span>
+            <h1 class="display-4 fw-black tracking-tight mb-4 text-body">App Categories</h1>
+            <p class="lead text-muted mx-auto mb-0" style="max-width: 600px;">Explore our vast collection of mobile
+                applications broken down by industry and use-case.</p>
+        </div>
+    </header>
+
+    <!-- Services Grid (8 Cards) -->
+    <section class="section-padding section-bg">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- 1. Educational Apps -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden d-flex flex-column">
+                        <img src="assets/edu_apps_placeholder_1772708315034.png" alt="Educational Apps"
+                            class="service-img">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold text-body mb-2">Educational Apps</h5>
+                            <p class="text-muted small flex-grow-1 mb-4">Interactive courses, language learning, and
+                                study companions for students of all ages.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold btn-sm">Explore <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Informational Apps -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden d-flex flex-column">
+                        <img src="assets/info_apps_placeholder_1772708329588.png" alt="Informational Apps"
+                            class="service-img">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold text-body mb-2">Informational Apps</h5>
+                            <p class="text-muted small flex-grow-1 mb-4">News aggregators, weather forecasts, and global
+                                market updates in real-time.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold btn-sm">Explore <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Entertainment Apps -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden d-flex flex-column">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=400"
+                            alt="Entertainment Apps" class="service-img">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold text-body mb-2">Entertainment Apps</h5>
+                            <p class="text-muted small flex-grow-1 mb-4">Games, streaming video, music platforms, and
+                                social media hubs.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold btn-sm">Explore <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Health Apps -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden d-flex flex-column">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=400"
+                            alt="Health Apps" class="service-img">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold text-body mb-2">Health Apps</h5>
+                            <p class="text-muted small flex-grow-1 mb-4">Fitness trackers, mental health guides, and
+                                calorie counting utilities.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold btn-sm">Explore <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Finance Apps -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden d-flex flex-column">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=400"
+                            alt="Finance Apps" class="service-img">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold text-body mb-2">Finance Apps</h5>
+                            <p class="text-muted small flex-grow-1 mb-4">Banking clients, investment platforms, and
+                                personal budgeting tools.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold btn-sm">Explore <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Travel Apps -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden d-flex flex-column">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=400"
+                            alt="Travel Apps" class="service-img">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold text-body mb-2">Travel Apps</h5>
+                            <p class="text-muted small flex-grow-1 mb-4">Flight bookings, hotel reservations, and local
+                                city guides.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold btn-sm">Explore <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Productivity Apps -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden d-flex flex-column">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=400"
+                            alt="Productivity Apps" class="service-img">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold text-body mb-2">Productivity Apps</h5>
+                            <p class="text-muted small flex-grow-1 mb-4">Task managers, note-taking clients, and team
+                                collaboration software.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold btn-sm">Explore <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Lifestyle Apps -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden d-flex flex-column">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=400"
+                            alt="Lifestyle Apps" class="service-img">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-bold text-body mb-2">Lifestyle Apps</h5>
+                            <p class="text-muted small flex-grow-1 mb-4">Dating, food delivery, smart home control, and
+                                fashion shopping.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold btn-sm">Explore <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section-padding bg-body border-top border-secondary border-opacity-10 text-center">
+        <div class="container">
+            <h2 class="display-6 fw-bold mb-3 text-body">Didn't find what you're looking for?</h2>
+            <p class="text-muted mb-4">Use our advanced search engine to find the exact application you need.</p>
+            <div class="mx-auto" style="max-width: 500px">
+                <div class="input-group input-group-lg shadow-sm">
+                    <span class="input-group-text bg-body text-primary border-primary"><i
+                            class="bi bi-search"></i></span>
+                    <input type="text" class="form-control border-primary" placeholder="Search applications...">
+                    <button class="btn btn-primary px-4 fw-bold">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Spotlight -->
+    <section class="section-padding bg-body border-top border-secondary border-opacity-10">
+        <div class="container">
+            <div class="card card-custom border-0 p-0 overflow-hidden shadow-lg"
+                style="background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-body) 100%);">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 p-5">
+                        <span class="badge bg-primary bg-opacity-10 text-primary mb-3">Featured App of the Month</span>
+                        <h2 class="display-5 fw-black tracking-tight mb-4 text-body">ZenSpace: Focused Productivity</h2>
+                        <p class="lead text-muted mb-5">Experience the new standard in digital minimalism. ZenSpace
+                            combines advanced AI with a beautiful, distraction-free interface to help you achieve your
+                            deep work goals.</p>
+                        <div class="d-flex gap-3">
+                            <button class="btn btn-primary rounded-pill px-5 py-3 fw-bold">Download Now</button>
+                            <button class="btn btn-outline-secondary rounded-pill px-4 py-3 fw-bold">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-4">
+                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid rounded-4 shadow" alt="Featured App">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Design (4 Columns) - Same as index.html -->
+    <footer class="footer">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-3 col-md-6">
+                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
+                        href="index.html">
+                        <i
+                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
+                        Apps
+                    </a>
+                    <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
+                        downloading the world's best mobile applications safely.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-twitter-x"></i></a><a href="#"
+                            class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a><a
+                            href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Column 2, 3, 4 abbreviated -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="blogs.html" class="footer-link">Blogs</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Support</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+                        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p class="opacity-75 small mb-3">Subscribe to get the latest app weekly updates directly to your
+                        inbox.</p>
+                    <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
+                        <div class="input-group"><input type="email"
+                                class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
+                                placeholder="Email address" required></div><button
+                            class="btn btn-primary w-100 fw-bold">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-5 border-top border-secondary border-opacity-25 opacity-50 small">
+                © 2026 Apps. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

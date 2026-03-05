@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps - Premium Dashboard</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/theme.js"></script>
+
+    <style>
+        :root {
+            --aura-1: rgba(79, 70, 229, 0.4);
+            --aura-2: rgba(139, 92, 246, 0.3);
+            --aura-3: rgba(6, 182, 212, 0.3);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-text: #ffffff;
+        }
+
+        [data-bs-theme="light"] {
+            --aura-1: rgba(79, 70, 229, 0.15);
+            --aura-2: rgba(139, 92, 246, 0.1);
+            --aura-3: rgba(6, 182, 212, 0.1);
+            --glass-bg: rgba(255, 255, 255, 0.6);
+            --glass-border: rgba(0, 0, 0, 0.05);
+            --glass-text: #1f2937;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            overflow-x: hidden;
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+        }
+
+        /* Aura Background */
+        .aura-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .aura-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: move 20s infinite alternate;
+            opacity: 0.6;
+        }
+
+        .blob-1 {
+            width: 600px;
+            height: 600px;
+            background: var(--aura-1);
+            top: -10%;
+            left: -10%;
+        }
+
+        .blob-2 {
+            width: 500px;
+            height: 500px;
+            background: var(--aura-2);
+            bottom: -10%;
+            right: -10%;
+            animation-delay: -5s;
+        }
+
+        .blob-3 {
+            width: 400px;
+            height: 400px;
+            background: var(--aura-3);
+            top: 40%;
+            left: 30%;
+            animation-duration: 25s;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(100px, 100px) scale(1.1);
+            }
+        }
+
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        /* Floating Dock Sidebar */
+        .dock {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80px;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+
+        .dock-item {
+            width: 50px;
+            height: 50px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dock-item:hover {
+            transform: scale(1.2);
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 0 20px var(--primary);
+        }
+
+        .dock-item.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Main Content wrapper */
+        .dashboard-container {
+            margin-left: 120px;
+            padding: 40px;
+            max-width: 1400px;
+        }
+
+        /* Cards */
+        .premium-card {
+            transition: all 0.4s ease;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-10px) perspective(1000px) rotateX(2deg);
+            border-color: var(--primary);
+        }
+
+        /* Interactive Rings */
+        .ring-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+        }
+
+        .ring-svg {
+            transform: rotate(-90deg);
+        }
+
+        .ring-circle-bg {
+            fill: none;
+            stroke: rgba(255, 255, 255, 0.05);
+            stroke-width: 8;
+        }
+
+        .ring-circle-val {
+            fill: none;
+            stroke-width: 8;
+            stroke-linecap: round;
+            stroke-dasharray: 283;
+            transition: stroke-dashoffset 1s ease;
+        }
+
+        /* Pulse */
+        .pulse-dot {
+            width: 10px;
+            height: 10px;
+            background: #10b981;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+        }
+
+        .pulse-dot::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            border-radius: 50%;
+            animation: pulse-animation 1.5s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 991px) {
+            .dock {
+                top: auto;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                flex-direction: row;
+                width: auto;
+                height: 70px;
+                padding: 0 20px;
+                border-radius: 20px;
+            }
+
+            .dashboard-container {
+                margin-left: 0;
+                padding: 20px;
+                padding-bottom: 100px;
+            }
+        }
+
+        .search-floating {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            padding: 10px 25px;
+            width: 100%;
+            max-width: 400px;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aura-bg">
+        <div class="aura-blob blob-1"></div>
+        <div class="aura-blob blob-2"></div>
+        <div class="aura-blob blob-3"></div>
+    </div>
+
+    <!-- Floating Dock -->
+    <nav class="dock glass-panel">
+        <a href="index.html" class="dock-item" title="Home">
+            <i class="bi bi-house-door"></i>
+        </a>
+        <a href="#" class="dock-item active" title="Dashboard">
+            <i class="bi bi-grid-1x2"></i>
+        </a>
+        <a href="#" class="dock-item" title="Analytics">
+            <i class="bi bi-graph-up-arrow"></i>
+        </a>
+        <a href="#" class="dock-item" title="Users">
+            <i class="bi bi-people"></i>
+        </a>
+        <a href="#" class="dock-item" title="Settings">
+            <i class="bi bi-gear"></i>
+        </a>
+        <div class="mt-auto d-none d-lg-flex flex-column gap-3">
+            <button class="theme-toggle btn dock-item" style="background: none; border: none;">
+                <i class="bi bi-moon"></i>
+            </button>
+            <a href="login.html" class="dock-item text-danger" title="Logout">
+                <i class="bi bi-box-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- Header area -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-5 gap-4">
+            <div>
+                <h1 class="display-5 fw-black text-body mb-2">Platform Pulse</h1>
+                <p class="text-muted lead mb-0">Unified ecosystem overview for <span class="text-primary fw-bold">Apps
+                        Store</span></p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <input type="text" class="search-floating shadow-sm" placeholder="Search commands or data...">
+                <div class="premium-card glass-panel d-flex align-items-center gap-3 p-2 pe-4">
+                    <img src="https://i.pravatar.cc/150?u=admin" class="rounded-circle" width="45" alt="Admin">
+                    <div>
+                        <h6 class="mb-0 fw-bold">Admin Nova</h6>
+                        <span class="badge bg-primary rounded-pill" style="font-size: 0.6rem;">SUPERUSER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Stats Grid -->
+        <div class="row g-4 mb-5">
+            <div class="col-xl-8">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="premium-card glass-panel p-4 h-100">
+                            <div class="d-flex justify-content-between align-items-start mb-4">
+                                <div>
+                                    <h4 class="fw-bold mb-1">Growth Curve</h4>
+                                    <p class="text-muted small">User retention and acquisition</p>
+                                </div>
+                                <span class="badge bg-success bg-opacity-10 text-success rounded-pill">+24%</span>
+                            </div>
+                            <div class="d-flex justify-content-around align-items-center py-3">
+                                <div class="ring-container">
+                                    <svg class="ring-svg" width="120" height="120">
+                                        <circle class="ring-circle-bg" cx="60" cy="60" r="45"></circle>
+                                        <circle class="ring-circle-val" cx="60" cy="60" r="45"
+                                            style="stroke: var(--primary); stroke-dashoffset: 70;"></circle>
+                                    </svg>
+                                    <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                        <span class="h4 fw-black mb-0">75%</span>
+                                    </div>
+                                </div>
+                                <div class="ring-container">
+                                    <svg class="ring-svg" width="120" height="120">
+                                        <circle class="ring-circle-bg" cx="60" cy="60" r="45"></circle>
+                                        <circle class="ring-circle-val" cx="60" cy="60" r="45"
+                                            style="stroke: var(--secondary); stroke-dashoffset: 140;"></circle>
+                                    </svg>
+                                    <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                        <span class="h4 fw-black mb-0">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="premium-card glass-panel p-4 h-100">
+                            <h4 class="fw-bold mb-4">Live Activity</h4>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="d-flex align-items-center gap-3 p-3 rounded-4"
+                                    style="background: rgba(255,255,255,0.03)">
+                                    <div class="pulse-dot"></div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-0 fw-bold">New App Submission</h6>
+                                        <small class="text-muted">"PixelCraft Pro" from Studio X</small>
+                                    </div>
+                                    <span class="text-muted small">Just now</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-3 p-3 rounded-4"
+                                    style="background: rgba(255,255,255,0.03)">
+                                    <div class="pulse-dot" style="background: var(--secondary)"></div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-0 fw-bold">System Update</h6>
+                                        <small class="text-muted">Edge Node #4 synchronized</small>
+                                    </div>
+                                    <span class="text-muted small">2m ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="premium-card glass-panel p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h4 class="fw-bold mb-0">Featured Developers</h4>
+                                <button class="btn btn-primary rounded-pill btn-sm px-4">See All</button>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="p-3 rounded-4 text-center"
+                                        style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05)">
+                                        <img src="https://i.pravatar.cc/150?u=dev1"
+                                            class="rounded-circle mb-3 border border-3 border-primary" width="60"
+                                            alt="Dev">
+                                        <h6 class="fw-bold mb-1">Alex Rivera</h6>
+                                        <p class="text-muted small mb-0">Top Utility Apps</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-3 rounded-4 text-center"
+                                        style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05)">
+                                        <img src="https://i.pravatar.cc/150?u=dev2"
+                                            class="rounded-circle mb-3 border border-3 border-secondary" width="60"
+                                            alt="Dev">
+                                        <h6 class="fw-bold mb-1">Sarah Chen</h6>
+                                        <p class="text-muted small mb-0">AI Innovator</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-3 rounded-4 text-center"
+                                        style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05)">
+                                        <img src="https://i.pravatar.cc/150?u=dev3"
+                                            class="rounded-circle mb-3 border border-3 border-tertiary" width="60"
+                                            alt="Dev">
+                                        <h6 class="fw-bold mb-1">James Black</h6>
+                                        <p class="text-muted small mb-0">Game Architect</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4">
+                <div class="premium-card glass-panel p-4 h-100">
+                    <h4 class="fw-bold mb-4">Quick Shortcuts</h4>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <button
+                                class="btn glass-panel w-100 p-4 d-flex flex-column align-items-center gap-2 hover-lift">
+                                <i class="bi bi-cloud-upload fs-2 text-primary"></i>
+                                <span class="fw-bold small">Upload App</span>
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button
+                                class="btn glass-panel w-100 p-4 d-flex flex-column align-items-center gap-2 hover-lift">
+                                <i class="bi bi-ticket-detailed fs-2 text-secondary"></i>
+                                <span class="fw-bold small">Tickets</span>
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button
+                                class="btn glass-panel w-100 p-4 d-flex flex-column align-items-center gap-2 hover-lift">
+                                <i class="bi bi-wallet2 fs-2 text-tertiary"></i>
+                                <span class="fw-bold small">Payouts</span>
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button
+                                class="btn glass-panel w-100 p-4 d-flex flex-column align-items-center gap-2 hover-lift">
+                                <i class="bi bi-shield-lock fs-2 text-success"></i>
+                                <span class="fw-bold small">Security</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 p-4 rounded-4"
+                        style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white;">
+                        <h5 class="fw-bold mb-3">Upgrade Subscription</h5>
+                        <p class="small opacity-75 mb-4">Unlock advanced neural analytics and priority node deployment
+                            for your applications.</p>
+                        <a href="pricing.html" class="btn btn-light rounded-pill w-100 fw-bold">Go Pro Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center opacity-25 p-4 small">
+            &copy; 2026 Premium Apps Dashboard. Immersive Design System.
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

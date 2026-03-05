@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps - About Us & More</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Theme Toggle Script -->
+    <script src="assets/theme.js"></script>
+
+    <style>
+        .page-header {
+            padding: 120px 0 80px;
+            background-color: var(--bg-body);
+            border-bottom: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#inPageNav" data-bs-smooth-scroll="true">
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
+                <i class="bi bi-boxes fs-4"></i>
+                <span class="fs-4 tracking-tight text-body">Apps</span>
+            </a>
+
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="bi bi-list fs-1 text-body"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
+                        id="offcanvasNavbarLabel">
+                        <i class="bi bi-boxes"></i> <span class="text-body">Apps</span>
+                    </h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="inPageNav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                        <a href="login.html" class="nav-link fw-bold">Login</a>
+                        <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
+                        <button
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            style="width: 40px; height: 40px;" aria-label="Toggle Theme">
+                            <i class="bi bi-moon fs-5 text-body"></i>
+                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center pb-0 border-0">
+        <div class="container">
+            <span class="text-secondary fw-bold text-uppercase tracking-wide small d-block mb-2">Platform Info</span>
+            <h1 class="display-4 fw-black tracking-tight mb-4 text-body">Everything Apps</h1>
+            <p class="lead text-muted mx-auto mb-5" style="max-width: 600px;">Learn about our mission, read the latest
+                industry blogs, review pricing plans, and get in touch in one place.</p>
+        </div>
+    </header>
+
+    <!-- 1. About Us -->
+    <section class="section-padding section-bg" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+                        class="img-fluid rounded-4 shadow-lg" alt="Team collaborating">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4 text-body">Our Mission</h2>
+                    <p class="lead text-muted mb-4">Our platform helps users discover the best mobile applications for
+                        education, entertainment, and productivity in a secure, curated environment.</p>
+                    <p class="text-muted mb-4">Founded in 2026, Apps was built out of a frustration with cluttered,
+                        ad-filled marketplaces. We believe that finding great software should be simple, safe, and
+                        beautiful. We manually vet submissions and support indie developers directly.</p>
+                    <div class="d-flex gap-4 mt-5">
+                        <div class="text-center">
+                            <h3 class="fw-black text-primary mb-1">50M+</h3>
+                            <span class="small text-muted fw-bold text-uppercase">Downloads</span>
+                        </div>
+                        <div class="text-center border-start border-end border-secondary border-opacity-25 px-4">
+                            <h3 class="fw-black text-secondary mb-1">12K+</h3>
+                            <span class="small text-muted fw-bold text-uppercase">Verified Apps</span>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="fw-black text-tertiary mb-1">200+</h3>
+                            <span class="small text-muted fw-bold text-uppercase">Countries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="section-padding section-bg">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Our Foundation</span>
+                <h2 class="display-6 fw-black tracking-tight mb-0 text-body">Our Core Values</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card card-custom border-0 p-5 h-100">
+                        <div class="icon-box text-primary fs-3 mb-4"><i class="bi bi-shield-check"></i></div>
+                        <h4 class="fw-bold mb-3 text-body">Security First</h4>
+                        <p class="text-muted mb-0">Every app on our platform undergoes rigorous security checks to
+                            ensure your data stays safe and private.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card card-custom border-0 p-5 h-100">
+                        <div class="icon-box text-secondary fs-3 mb-4"><i class="bi bi-people"></i></div>
+                        <h4 class="fw-bold mb-3 text-body">User Centric</h4>
+                        <p class="text-muted mb-0">We build for users, not algorithms. Our discovery engine prioritizes
+                            quality and utility over advertising spend.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card card-custom border-0 p-5 h-100">
+                        <div class="icon-box text-tertiary fs-3 mb-4"><i class="bi bi-rocket-takeoff"></i></div>
+                        <h4 class="fw-bold mb-3 text-body">Innovation Driven</h4>
+                        <p class="text-muted mb-0">We actively seek out and spotlight the most innovative developers
+                            pushing the boundaries of what's possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section-padding bg-body border-top border-secondary border-opacity-10">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Our Team</span>
+                <h2 class="display-6 fw-black tracking-tight mb-0 text-body">The People Behind Apps</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <img src="https://i.pravatar.cc/150?u=10"
+                            class="rounded-4 mb-3 img-fluid shadow-sm grayscale hover-none" alt="Leader">
+                        <h5 class="fw-bold mb-1 text-body">David Miller</h5>
+                        <p class="text-primary small fw-bold text-uppercase mb-0">CEO & Founder</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <img src="https://i.pravatar.cc/150?u=11"
+                            class="rounded-4 mb-3 img-fluid shadow-sm grayscale hover-none" alt="Leader">
+                        <h5 class="fw-bold mb-1 text-body">Sarah Wu</h5>
+                        <p class="text-primary small fw-bold text-uppercase mb-0">CTO</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <img src="https://i.pravatar.cc/150?u=12"
+                            class="rounded-4 mb-3 img-fluid shadow-sm grayscale hover-none" alt="Leader">
+                        <h5 class="fw-bold mb-1 text-body">James Wilson</h5>
+                        <p class="text-primary small fw-bold text-uppercase mb-0">Head of Product</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <img src="https://i.pravatar.cc/150?u=13"
+                            class="rounded-4 mb-3 img-fluid shadow-sm grayscale hover-none" alt="Leader">
+                        <h5 class="fw-bold mb-1 text-body">Emma Thompson</h5>
+                        <p class="text-primary small fw-bold text-uppercase mb-0">Design Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Design (4 Columns) - Same as index.html -->
+    <footer class="footer">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-3 col-md-6">
+                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
+                        href="index.html">
+                        <i
+                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
+                        Apps
+                    </a>
+                    <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
+                        downloading the world's best mobile applications safely.</p>
+                </div>
+                <!-- Column 2, 3, 4 abbreviated -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="blogs.html" class="footer-link">Blogs</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Support</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+                        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
+                        <div class="input-group"><input type="email"
+                                class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
+                                placeholder="Email address" required></div><button
+                            class="btn btn-primary w-100 fw-bold">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-5 border-top border-secondary border-opacity-25 opacity-50 small">
+                © 2026 Apps. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

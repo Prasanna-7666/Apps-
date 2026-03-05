@@ -1,0 +1,375 @@
+/* ==========================================================================
+   App Store Website Theme Variables
+   ========================================================================== */
+:root {
+    /* Core Colors */
+    --primary: #4F46E5;
+    /* Indigo */
+    --primary-hover: #4338ca;
+    --secondary: #06B6D4;
+    /* Cyan */
+    --secondary-hover: #0891b2;
+    --tertiary: #F59E0B;
+    /* Amber */
+    --tertiary-hover: #d97706;
+
+    /* Light Theme (Default) */
+    --bg-color: #f8fafc;
+    --bg-body: #ffffff;
+    --text-color: #0f172a;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --card-bg: #ffffff;
+    --header-bg: rgba(255, 255, 255, 0.95);
+    --footer-bg: #1e293b;
+    --footer-text: #f8fafc;
+
+    /* Utilities */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --transition-speed: 0.3s;
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   Dark Theme Override
+   ========================================================================== */
+body.dark-mode {
+    --bg-color: #0f172a;
+    --bg-body: #1e293b;
+    --text-color: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+    --card-bg: #1e293b;
+    --header-bg: rgba(15, 23, 42, 0.95);
+    --footer-bg: #0b1120;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   Global Element Styles
+   ========================================================================== */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+.bg-body {
+    background-color: var(--bg-body) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+/* ==========================================================================
+   Typography & Utilities
+   ========================================================================== */
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.text-tertiary {
+    color: var(--tertiary) !important;
+}
+
+.text-body {
+    color: var(--text-color) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.bg-primary-custom {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary-custom {
+    background-color: var(--secondary) !important;
+}
+
+.bg-tertiary-custom {
+    background-color: var(--tertiary) !important;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+.tracking-tight {
+    letter-spacing: -0.025em;
+}
+
+.tracking-wide {
+    letter-spacing: 0.05em;
+}
+
+.section-padding {
+    padding: 5rem 0;
+}
+
+.section-bg {
+    background-color: var(--bg-color);
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    transition: all var(--transition-speed);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+    font-weight: 600;
+    transition: all var(--transition-speed);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--tertiary);
+    border-color: var(--tertiary);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: var(--tertiary-hover);
+    border-color: var(--tertiary-hover);
+}
+
+/* Header & Navbar */
+.navbar {
+    background-color: var(--header-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    transition: var(--transition-speed);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    opacity: 0.8;
+    margin: 0 0.5rem;
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    opacity: 1;
+    color: var(--primary) !important;
+}
+
+/* Cards */
+.card-custom {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-speed);
+    overflow: hidden;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* App Icons inside Cards */
+.app-icon-img {
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-sm);
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Form Controls */
+.form-control,
+.form-select {
+    background-color: var(--bg-body);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--bg-body);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+    color: var(--text-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding-top: 5rem;
+}
+
+.footer-heading {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.75rem;
+    transition: var(--transition-speed);
+}
+
+.footer-link:hover {
+    color: var(--secondary);
+    padding-left: 5px;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+    transition: var(--transition-speed);
+}
+
+#backToTop:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Offcanvas for Mobile */
+.offcanvas {
+    background-color: var(--bg-body);
+    border-left: 1px solid var(--border-color);
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.offcanvas .btn-close {
+    filter: invert(var(--close-btn-invert, 0));
+}
+
+body.dark-mode .offcanvas .btn-close {
+    --close-btn-invert: 1;
+}
+
+/* Badge specific styling */
+.badge-app {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+    background-color: rgba(6, 182, 212, 0.1);
+    color: var(--secondary);
+}
+
+/* Avatar group */
+.avatar-group {
+    display: flex;
+}
+
+.avatar-group img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-body);
+    margin-right: -10px;
+}
+
+.avatar-group img:last-child {
+    margin-right: 0;
+}
+
+/* Icon Box */
+.icon-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 1rem;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.icon-box-primary {
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary);
+}
