@@ -147,14 +147,22 @@
                 </div>
 
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link active" href="home2.html">Home 2</a></li>
-                        <li class="nav-item"><a class="nav-link" href="apps.html">Apps</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="apps.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Apps
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="apps.html#education">Education Apps</a></li>
+                                <li><a class="dropdown-item" href="apps.html#information">Information Apps</a></li>
+                                <li><a class="dropdown-item" href="apps.html#entertainment">Entertainment Apps</a></li>
+                                <li><a class="dropdown-item" href="apps.html#tools">Tools</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
 
                     <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
@@ -541,17 +549,19 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Company</h5>
                     <ul class="list-unstyled mb-0">
-                        <li><a href="about.html" class="footer-link">About Us</a></li>
-                        <li><a href="blogs.html" class="footer-link">Blogs</a></li>
+                        <li><a href="about.html#about" class="footer-link">About Us</a></li>
+                        <li><a href="about.html#services" class="footer-link">Our Services</a></li>
+                        <li><a href="about.html#blogs" class="footer-link">Blogs</a></li>
                         <li><a href="#" class="footer-link">Careers</a></li>
-                        <li><a href="pricing.html" class="footer-link">Pricing Plans</a></li>
+                        <li><a href="about.html#pricing" class="footer-link">Pricing Plans</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Support</h5>
                     <ul class="list-unstyled mb-0">
                         <li><a href="#" class="footer-link">Help Center</a></li>
-                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="about.html#contact" class="footer-link">Contact Support</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">

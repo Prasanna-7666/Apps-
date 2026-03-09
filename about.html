@@ -29,7 +29,7 @@
     </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#inPageNav" data-bs-smooth-scroll="true">
+<body>
 
     <!-- Header Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
@@ -56,14 +56,22 @@
                 </div>
 
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="inPageNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
-                        <li class="nav-item"><a class="nav-link" href="apps.html">Apps</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="apps.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Apps
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="apps.html#education">Education Apps</a></li>
+                                <li><a class="dropdown-item" href="apps.html#information">Information Apps</a></li>
+                                <li><a class="dropdown-item" href="apps.html#entertainment">Entertainment Apps</a></li>
+                                <li><a class="dropdown-item" href="apps.html#tools">Tools</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
 
                     <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
@@ -82,12 +90,13 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="page-header text-center pb-0 border-0">
+    <header class="page-header text-center pb-0 border-0" id="about">
         <div class="container">
             <span class="text-secondary fw-bold text-uppercase tracking-wide small d-block mb-2">Platform Info</span>
             <h1 class="display-4 fw-black tracking-tight mb-4 text-body">Everything Apps</h1>
-            <p class="lead text-muted mx-auto mb-5" style="max-width: 600px;">Learn about our mission, read the latest
-                industry blogs, review pricing plans, and get in touch in one place.</p>
+            <p class="lead text-muted mx-auto mb-5" style="max-width: 600px;">Learn about our mission, explore our
+                specialized services, read the latest
+                industry blogs, and get in touch in one place.</p>
         </div>
     </header>
 
@@ -205,6 +214,272 @@
         </div>
     </section>
 
+    <!-- 2. Services Section -->
+    <section class="section-padding section-bg border-top border-secondary border-opacity-10" id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Our Expertise</span>
+                <h2 class="display-6 fw-black tracking-tight mb-4 text-body">Specialized App Services</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">We specialize in three core categories of
+                    application development and curation, ensuring quality across the board.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Educational Apps -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 h-100 p-5 text-center shadow-sm">
+                        <div class="icon-box text-primary fs-2 mb-4 mx-auto"
+                            style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; background: rgba(79, 70, 229, 0.1); border-radius: 20px;">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 text-body">Educational Apps</h4>
+                        <p class="text-muted small mb-0">From language learning to complex STEM simulations, we build
+                            and curate tools that make learning accessible and engaging for all ages.</p>
+                    </div>
+                </div>
+                <!-- Informational Apps -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 h-100 p-5 text-center shadow-sm text-center">
+                        <div class="icon-box text-secondary fs-2 mb-4 mx-auto"
+                            style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; background: rgba(6, 182, 212, 0.1); border-radius: 20px;">
+                            <i class="bi bi-info-circle"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 text-body">Informational Apps</h4>
+                        <p class="text-muted small mb-0">Stay ahead with real-time data aggregators, news platforms, and
+                            specialized knowledge bases designed for the modern information age.</p>
+                    </div>
+                </div>
+                <!-- Entertainment Apps -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 h-100 p-5 text-center shadow-sm text-center">
+                        <div class="icon-box text-tertiary fs-2 mb-4 mx-auto"
+                            style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; background: rgba(244, 63, 94, 0.1); border-radius: 20px;">
+                            <i class="bi bi-controller"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 text-body">Entertainment Apps</h4>
+                        <p class="text-muted small mb-0">Experience next-level immersion with our gaming, streaming, and
+                            social apps that prioritize user experience and high-fidelity performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Blogs Section -->
+    <section class="section-padding bg-body border-top border-secondary border-opacity-10" id="blogs">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Editorial</span>
+                <h2 class="display-6 fw-black tracking-tight mb-4 text-body">Latest Insights</h2>
+            </div>
+            <div class="row g-4">
+                <!-- Blog 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?auto=format&fit=crop&q=80&w=500"
+                            class="img-fluid" style="height: 200px; object-fit:cover;" alt="Education">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <span
+                                class="badge bg-primary bg-opacity-10 text-primary align-self-start mb-3">Education</span>
+                            <h5 class="fw-bold mb-3 text-body">Best educational apps for university students</h5>
+                            <p class="text-muted small flex-grow-1">A curated list of applications designed to manage
+                                schedules, track assignments, and aid intensive study sessions.</p>
+                            <a href="#" class="btn btn-link px-0 text-decoration-none fw-bold">Read More <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=500"
+                            class="img-fluid" style="height: 200px; object-fit:cover;" alt="Productivity">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <span
+                                class="badge bg-secondary bg-opacity-10 text-secondary align-self-start mb-3">Productivity</span>
+                            <h5 class="fw-bold mb-3 text-body">Top productivity apps to organize your workflow</h5>
+                            <p class="text-muted small flex-grow-1">Stop losing track of tasks. These proven kanban and
+                                list-making apps integrate perfectly with your desktop tools.</p>
+                            <a href="#" class="btn btn-link px-0 text-decoration-none fw-bold">Read More <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 h-100 p-0 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=500"
+                            class="img-fluid" style="height: 200px; object-fit:cover;" alt="AI Tech">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <span class="badge bg-tertiary bg-opacity-10 text-tertiary align-self-start mb-3">Tech
+                                Trends</span>
+                            <h5 class="fw-bold mb-3 text-body">AI apps trending in 2026 for mobile devices</h5>
+                            <p class="text-muted small flex-grow-1">From real-time translation to generative art, here
+                                are the most impressive Neural Engine applications this year.</p>
+                            <a href="#" class="btn btn-link px-0 text-decoration-none fw-bold">Read More <i
+                                    class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Pricing Section -->
+    <section class="section-padding section-bg border-top border-secondary border-opacity-10" id="pricing">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Choose Your
+                    Path</span>
+                <h2 class="display-6 fw-black tracking-tight mb-4 text-body">Simple, Transparent Pricing</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Free Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 p-5 h-100 text-center">
+                        <h4 class="fw-bold mb-3 text-body">Free Plan</h4>
+                        <div class="mb-4">
+                            <span class="display-4 fw-black text-body">$0</span>
+                            <span class="text-muted">/month</span>
+                        </div>
+                        <ul class="list-unstyled mb-5 d-flex flex-column gap-3 text-start px-2 text-muted">
+                            <li><i class="bi bi-check2 text-secondary fs-5 me-2 align-middle"></i> Browse all categories
+                            </li>
+                            <li><i class="bi bi-check2 text-secondary fs-5 me-2 align-middle"></i> Limited daily
+                                downloads (5)</li>
+                            <li><i class="bi bi-check2 text-secondary fs-5 me-2 align-middle"></i> Community support
+                            </li>
+                        </ul>
+                        <a href="login.html" class="btn btn-outline-primary w-100 rounded-pill fw-bold mt-auto py-2">Get
+                            Started Free</a>
+                    </div>
+                </div>
+                <!-- Pro Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div
+                        class="card card-custom border-primary border-2 p-5 h-100 text-center position-relative shadow-lg">
+                        <div class="position-absolute top-0 start-50 translate-middle-x bg-primary text-white fw-bold px-4 py-1 rounded-bottom text-uppercase tracking-wide"
+                            style="font-size: 0.75rem;">Most Popular</div>
+                        <h4 class="fw-bold mb-3 text-body mt-2">Pro Plan</h4>
+                        <div class="mb-4">
+                            <span class="display-4 fw-black text-primary">$9</span>
+                            <span class="text-muted">/month</span>
+                        </div>
+                        <ul class="list-unstyled mb-5 d-flex flex-column gap-3 text-start px-2 text-muted">
+                            <li><i class="bi bi-check2 text-primary fs-5 me-2 align-middle"></i> Unlimited downloads
+                            </li>
+                            <li><i class="bi bi-check2 text-primary fs-5 me-2 align-middle"></i> Access Premium Library
+                            </li>
+                            <li><i class="bi bi-check2 text-primary fs-5 me-2 align-middle"></i> Early beta access</li>
+                            <li><i class="bi bi-check2 text-primary fs-5 me-2 align-middle"></i> Ad-free experience</li>
+                        </ul>
+                        <a href="login.html"
+                            class="btn btn-primary w-100 rounded-pill fw-bold mt-auto py-2 shadow-sm">Upgrade to Pro</a>
+                    </div>
+                </div>
+                <!-- Developer Plan -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card card-custom border-0 p-5 h-100 text-center">
+                        <h4 class="fw-bold mb-3 text-body">Developer Plan</h4>
+                        <div class="mb-4">
+                            <span class="display-4 fw-black text-body">$49</span>
+                            <span class="text-muted">/month</span>
+                        </div>
+                        <ul class="list-unstyled mb-5 d-flex flex-column gap-3 text-start px-2 text-muted">
+                            <li><i class="bi bi-check2 text-tertiary fs-5 me-2 align-middle"></i> Publish unlimited apps
+                            </li>
+                            <li><i class="bi bi-check2 text-tertiary fs-5 me-2 align-middle"></i> Dashboard Analytics
+                            </li>
+                            <li><i class="bi bi-check2 text-tertiary fs-5 me-2 align-middle"></i> User messaging system
+                            </li>
+                            <li><i class="bi bi-check2 text-tertiary fs-5 me-2 align-middle"></i> Priority support</li>
+                        </ul>
+                        <a href="login.html"
+                            class="btn btn-outline-primary w-100 rounded-pill fw-bold mt-auto py-2">Become a
+                            Publisher</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Contact Section -->
+    <section class="section-padding bg-body border-top border-secondary border-opacity-10" id="contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Support</span>
+                <h2 class="display-6 fw-black tracking-tight mb-4 text-body">Get in Touch</h2>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4 text-body">Contact Information</h2>
+                    <p class="text-muted mb-5">Reach out to us through any of the channels below or fill out the form
+                        and we'll get back to you within 24 hours.</p>
+
+                    <div class="d-flex align-items-center gap-4 mb-4">
+                        <div class="icon-box icon-box-primary text-primary mb-0 flex-shrink-0"
+                            style="width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background-color: rgba(79, 70, 229, 0.1);">
+                            <i class="bi bi-geo-alt-fill fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 text-body">Office Address</h6>
+                            <p class="text-muted small mb-0">123 Market St, Suite 500<br>San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-4 mb-5">
+                        <div class="icon-box text-secondary mb-0 flex-shrink-0"
+                            style="background-color: rgba(6, 182, 212, 0.1); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-telephone-fill fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1 text-body">Phone Number</h6>
+                            <p class="text-muted small mb-0">+1 (800) 555-0198<br>Mon-Fri, 9am - 6pm PST</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <a href="#"
+                            class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 45px; height: 45px;"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 45px; height: 45px;"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 45px; height: 45px;"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card card-custom border-0 p-4 p-md-5 shadow-sm">
+                        <h4 class="fw-bold mb-4 text-body">Send us a message</h4>
+                        <form onsubmit="event.preventDefault();">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label small fw-bold text-muted">Full Name</label>
+                                <input type="text" class="form-control rounded-3" id="contactName"
+                                    placeholder="John Doe" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label small fw-bold text-muted">Email
+                                    Address</label>
+                                <input type="email" class="form-control rounded-3" id="contactEmail"
+                                    placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="contactMessage" class="form-label small fw-bold text-muted">Your
+                                    Message</label>
+                                <textarea class="form-control rounded-3" id="contactMessage" rows="5"
+                                    placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 rounded-pill py-3 fw-bold">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Design (4 Columns) - Same as index.html -->
     <footer class="footer">
         <div class="container pb-5">
@@ -224,10 +499,11 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Company</h5>
                     <ul class="list-unstyled mb-0">
-                        <li><a href="about.html" class="footer-link">About Us</a></li>
-                        <li><a href="blogs.html" class="footer-link">Blogs</a></li>
+                        <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#services" class="footer-link">Our Services</a></li>
+                        <li><a href="#blogs" class="footer-link">Blogs</a></li>
                         <li><a href="#" class="footer-link">Careers</a></li>
-                        <li><a href="pricing.html" class="footer-link">Pricing Plans</a></li>
+                        <li><a href="#pricing" class="footer-link">Pricing Plans</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -235,7 +511,7 @@
                     <ul class="list-unstyled mb-0">
                         <li><a href="#" class="footer-link">Help Center</a></li>
                         <li><a href="#" class="footer-link">FAQ</a></li>
-                        <li><a href="contact.html" class="footer-link">Contact Support</a></li>
+                        <li><a href="#contact" class="footer-link">Contact Support</a></li>
                         <li><a href="#" class="footer-link">Terms & Conditions</a></li>
                     </ul>
                 </div>
