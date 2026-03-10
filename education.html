@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps - Education</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Theme Toggle Script -->
+    <script src="assets/theme.js"></script>
+
+    <style>
+        .page-header {
+            padding: 120px 0 80px;
+            background-color: var(--bg-body);
+            border-bottom: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
+                <i class="bi bi-boxes fs-4"></i>
+                <span class="fs-4 tracking-tight text-body">Apps</span>
+            </a>
+
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="bi bi-list fs-1 text-body"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
+                        id="offcanvasNavbarLabel">
+                        <i class="bi bi-boxes"></i> <span class="text-body">Apps</span>
+                    </h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="apps.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Apps
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="education.html">Education Apps</a></li>
+                                <li><a class="dropdown-item" href="information.html">Information Apps</a></li>
+                                <li><a class="dropdown-item" href="entertainment.html">Entertainment Apps</a></li>
+                                <li><a class="dropdown-item" href="tools.html">Tools</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                        <a href="login.html" class="nav-link fw-bold">Login</a>
+                        <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
+                        <button
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            style="width: 40px; height: 40px;" aria-label="Toggle Theme">
+                            <i class="bi bi-moon fs-5 text-body"></i>
+                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <header class="page-header text-center border-0 pb-5">
+        <div class="container">
+            <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Education</span>
+            <h1 class="display-4 fw-black tracking-tight mb-4 text-body">Education Apps</h1>
+            <p class="lead text-muted mx-auto mb-0" style="max-width: 600px;">Learn & Grow with our top-rated
+                educational mobile applications.</p>
+        </div>
+    </header>
+
+    <section class="pb-5 bg-body">
+        <div class="container">
+            <!-- Hero Spotlight -->
+            <div class="hero-spotlight">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200"
+                    class="hero-bg-img" alt="Featured App">
+                <div class="hero-content">
+                    <span class="badge bg-primary mb-3">Editor's Choice</span>
+                    <h2 class="display-5 fw-bold mb-3 text-body">StudyMate Premium</h2>
+                    <p class="lead text-muted mb-4">The all-in-one AI tutor that helps you master any subject with
+                        personalized learning paths and interactive exercises.</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold">Get</button>
+                        <button class="btn btn-outline-secondary rounded-pill px-4">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <h3 class="fw-bold m-0 text-body">Trending Now</h3>
+                <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- App 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
+                                class="rounded-4 shadow-sm" width="60" height="60" alt="Linguist">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-body">Linguist Pro</h6>
+                                <p class="text-muted small mb-0">Language Learning</p>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4">Master 50+ languages with immersive AI conversations and
+                            real-time pronunciation feedback.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
+                            <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- App 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=100"
+                                class="rounded-4 shadow-sm" width="60" height="60" alt="MathFlow">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-body">MathFlow</h6>
+                                <p class="text-muted small mb-0">STEM Education</p>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4">Solve complex equations instantly and understand the logic with
+                            interactive step-by-step guides.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</span>
+                            <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- App 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=100"
+                                class="rounded-4 shadow-sm" width="60" height="60" alt="HistoryGo">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-body">HistoryGo VR</h6>
+                                <p class="text-muted small mb-0">Interactive History</p>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4">Experience historical events in stunning AR and VR. Walk
+                            through ancient civilizations from your room.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.7</span>
+                            <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- App 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=100"
+                                class="rounded-4 shadow-sm" width="60" height="60" alt="SkillShare">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-body">SkillSphere</h6>
+                                <p class="text-muted small mb-0">Creative Skills</p>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4">Access thousands of masterclasses in design, photography, and
+                            coding from world-class experts.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
+                            <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Lists Section -->
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h4 class="section-title-sm"><i class="bi bi-gift text-primary"></i> Top Free Apps</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">Duolingo</h6>
+                                <p class="text-muted small mb-0">Education • 4.7 <i
+                                        class="bi bi-star-fill text-warning"></i></p>
+                            </div>
+                            <span class="price-tag small text-success">Free</span>
+                        </a>
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">Khan Academy</h6>
+                                <p class="text-muted small mb-0">Learning • 4.9 <i
+                                        class="bi bi-star-fill text-warning"></i></p>
+                            </div>
+                            <span class="price-tag small text-success">Free</span>
+                        </a>
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">Google Classroom</h6>
+                                <p class="text-muted small mb-0">Tools • 4.5 <i
+                                        class="bi bi-star-fill text-warning"></i></p>
+                            </div>
+                            <span class="price-tag small text-success">Free</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="section-title-sm"><i class="bi bi-cart-check text-primary"></i> Top Paid Apps</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">Procreate Pocket</h6>
+                                <p class="text-muted small mb-0">Art • 4.9 <i class="bi bi-star-fill text-warning"></i>
+                                </p>
+                            </div>
+                            <span class="price-tag small">$4.99</span>
+                        </a>
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">Forest: Stay Focused</h6>
+                                <p class="text-muted small mb-0">Efficiency • 4.8 <i
+                                        class="bi bi-star-fill text-warning"></i></p>
+                            </div>
+                            <span class="price-tag small">$1.99</span>
+                        </a>
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">WolframAlpha Pro</h6>
+                                <p class="text-muted small mb-0">Compute • 4.7 <i
+                                        class="bi bi-star-fill text-warning"></i></p>
+                            </div>
+                            <span class="price-tag small">$2.99</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New & Rising Section -->
+            <div class="mt-5 pt-5 border-top border-secondary border-opacity-10">
+                <h3 class="fw-bold mb-4 text-body">New & Rising</h3>
+                <div class="scroll-container">
+                    <!-- Item 1 -->
+                    <div class="scroll-item">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-3" width="48" height="48" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body small">FlashCard AI</h6>
+                                    <span class="text-muted extra-small">New • 4.9</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-primary rounded-pill w-100 py-1">Get</button>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="scroll-item">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-3" width="48" height="48" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body small">CodeBuddy</h6>
+                                    <span class="text-muted extra-small">New • 4.8</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-primary rounded-pill w-100 py-1">Get</button>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="scroll-item">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-3" width="48" height="48" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body small">NoteMaster</h6>
+                                    <span class="text-muted extra-small">New • 4.7</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-primary rounded-pill w-100 py-1">Get</button>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="scroll-item">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <img src="https://images.unsplash.com/photo-1588675646184-f5b0b0b0b2f8?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-3" width="48" height="48" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body small">SkillSync</h6>
+                                    <span class="text-muted extra-small">New • 4.9</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-primary rounded-pill w-100 py-1">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Language Learning Section -->
+            <div class="mt-5 pt-5 border-top border-secondary border-opacity-10">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <h3 class="fw-bold m-0 text-body">Language Learning</h3>
+                    <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">LinguaFlow</h6>
+                                    <p class="text-muted extra-small mb-0">Speak like a native</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Advanced speech recognition to perfect your accent in 30+
+                                languages.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">VocabMaster</h6>
+                                    <p class="text-muted extra-small mb-0">Daily word power</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Master 10,000+ words with spaced repetition and visual
+                                mnemonics.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">Polyglot AI</h6>
+                                    <p class="text-muted extra-small mb-0">AI Conversations</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Practice real-world scenarios with our intelligent AI
+                                language coaches.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">GrammarCheck</h6>
+                                    <p class="text-muted extra-small mb-0">Writing excellence</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">The ultimate writing companion for perfect grammar and
+                                style in any language.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEM & Coding Section -->
+            <div class="mt-5 pt-5 border-top border-secondary border-opacity-10">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <h3 class="fw-bold m-0 text-body">STEM & Coding</h3>
+                    <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">CodeAcademy+</h6>
+                                    <p class="text-muted extra-small mb-0">Learn to code</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Hands-on interactive lessons for Python, JavaScript, and
+                                more.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">MathLabs</h6>
+                                    <p class="text-muted extra-small mb-0">Visual math</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Interactive simulations that make complex math concepts
+                                easy to grasp.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">ScienceQuest</h6>
+                                    <p class="text-muted extra-small mb-0">Explore the world</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Virtual lab experiments and AR discoveries for young
+                                scientists.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">LogicPuzzles</h6>
+                                    <p class="text-muted extra-small mb-0">Brain training</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Sharpen your critical thinking skills with 500+ challenging
+                                logic grids.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creative Arts & Music Section -->
+            <div class="mt-5 pt-5 border-top border-secondary border-opacity-10">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <h3 class="fw-bold m-0 text-body">Creative Arts & Music</h3>
+                    <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">ArtStudio VR</h6>
+                                    <p class="text-muted extra-small mb-0">Digital canvas</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Professional-grade digital painting and sculpting in
+                                virtual space.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">MusicMaker</h6>
+                                    <p class="text-muted extra-small mb-0">Theory & Play</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Learn music theory and instrument play with real-time
+                                feedback.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">PhotoSkill</h6>
+                                    <p class="text-muted extra-small mb-0">Master photography</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Comprehensive lessons in lighting, composition, and
+                                post-processing.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1544924202-7dec3bc17942?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">DesignSync</h6>
+                                    <p class="text-muted extra-small mb-0">UI/UX Basics</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Learn user interface design principles with hands-on
+                                projects and tutorials.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
+                        href="index.html">
+                        <i
+                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
+                        Apps
+                    </a>
+                    <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
+                        downloading the world's best mobile applications safely.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-twitter-x"></i></a><a href="#"
+                            class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a><a
+                            href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html#about" class="footer-link">About Us</a></li>
+                        <li><a href="about.html#services" class="footer-link">Our Services</a></li>
+                        <li><a href="about.html#blogs" class="footer-link">Blogs</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="about.html#pricing" class="footer-link">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Support</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="about.html#contact" class="footer-link">Contact Support</a></li>
+                        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
+                        <div class="input-group"><input type="email"
+                                class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
+                                placeholder="Email address" required></div><button
+                            class="btn btn-primary w-100 fw-bold">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-5 border-top border-secondary border-opacity-25 opacity-50 small">
+                © 2026 Apps. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

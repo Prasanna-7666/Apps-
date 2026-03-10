@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apps - Explore Apps</title>
+    <title>Apps - Explore Categories</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
 
     <!-- Bootstrap CSS -->
@@ -25,14 +25,6 @@
             padding: 120px 0 80px;
             background-color: var(--bg-body);
             border-bottom: 1px solid var(--border-color);
-        }
-
-        .service-img {
-            height: 140px;
-            width: 100%;
-            object-fit: cover;
-            border-bottom: 1px solid var(--border-color);
-            background-color: var(--bg-color);
         }
     </style>
 </head>
@@ -73,10 +65,10 @@
                                 Apps
                             </a>
                             <ul class="dropdown-menu border-0 shadow-sm">
-                                <li><a class="dropdown-item" href="#education">Education Apps</a></li>
-                                <li><a class="dropdown-item" href="#information">Information Apps</a></li>
-                                <li><a class="dropdown-item" href="#entertainment">Entertainment Apps</a></li>
-                                <li><a class="dropdown-item" href="#tools">Tools</a></li>
+                                <li><a class="dropdown-item" href="education.html">Education Apps</a></li>
+                                <li><a class="dropdown-item" href="information.html">Information Apps</a></li>
+                                <li><a class="dropdown-item" href="entertainment.html">Entertainment Apps</a></li>
+                                <li><a class="dropdown-item" href="tools.html">Tools</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -100,15 +92,64 @@
     <!-- Page Title -->
     <header class="page-header text-center">
         <div class="container">
-            <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Our Apps</span>
-            <h1 class="display-4 fw-black tracking-tight mb-4 text-body">App Categories</h1>
+            <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Discovery</span>
+            <h1 class="display-4 fw-black tracking-tight mb-4 text-body">App Marketplace</h1>
             <p class="lead text-muted mx-auto mb-0" style="max-width: 600px;">Explore our vast collection of mobile
-                applications broken down by industry and use-case.</p>
+                applications broken down by specialized categories.</p>
         </div>
     </header>
 
-    <!-- 1. New & Notable Apps -->
+    <!-- Categories Landing -->
     <section class="section-padding bg-body">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-body">Browse by Category</h2>
+                <p class="text-muted">Select a category to see full listings</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <a href="education.html" class="text-decoration-none h-100 d-block">
+                        <div class="card card-custom border-0 p-5 h-100 text-center hover-lift card-category-premium">
+                            <div class="fs-1 mb-4 text-white"><i class="bi bi-book"></i></div>
+                            <h4 class="fw-bold text-white">Education</h4>
+                            <p class="text-white opacity-75 small mb-0">Learn and grow with top-rated learning tools.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="information.html" class="text-decoration-none h-100 d-block">
+                        <div class="card card-custom border-0 p-5 h-100 text-center hover-lift card-category-premium">
+                            <div class="fs-1 mb-4 text-white"><i class="bi bi-info-circle"></i></div>
+                            <h4 class="fw-bold text-white">Information</h4>
+                            <p class="text-white opacity-75 small mb-0">Stay informed with real-time news and data.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="entertainment.html" class="text-decoration-none h-100 d-block">
+                        <div class="card card-custom border-0 p-5 h-100 text-center hover-lift card-category-premium">
+                            <div class="fs-1 mb-4 text-white"><i class="bi bi-controller"></i></div>
+                            <h4 class="fw-bold text-white">Entertainment</h4>
+                            <p class="text-white opacity-75 small mb-0">Dive into gaming and immersive streaming.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="tools.html" class="text-decoration-none h-100 d-block">
+                        <div class="card card-custom border-0 p-5 h-100 text-center hover-lift card-category-premium">
+                            <div class="fs-1 mb-4 text-white"><i class="bi bi-gear"></i></div>
+                            <h4 class="fw-bold text-white">Tools</h4>
+                            <p class="text-white opacity-75 small mb-0">Boost your workflow with powerful tools.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. New & Notable Apps -->
+    <section class="section-padding bg-body border-top border-secondary border-opacity-10">
         <div class="container">
             <div class="d-flex justify-content-between align-items-end mb-4">
                 <div>
@@ -116,8 +157,6 @@
                         Arrivals</span>
                     <h2 class="display-6 fw-bold m-0 text-body">New & Notable</h2>
                 </div>
-                <a href="#" class="btn btn-link fw-bold text-decoration-none p-0">See All <i
-                        class="bi bi-chevron-right small"></i></a>
             </div>
 
             <div class="row g-4">
@@ -179,8 +218,7 @@
                             </div>
                         </div>
                         <p class="text-muted small mb-4">A powerful code editor for on-the-go development with full
-                            terminal
-                            access.</p>
+                            terminal access.</p>
                         <button class="btn btn-sm btn-primary rounded-pill w-100 fw-bold">Get</button>
                     </div>
                 </div>
@@ -188,568 +226,9 @@
         </div>
     </section>
 
-    <!-- 2. Top Charts -->
-    <section class="section-padding bg-body border-top border-secondary border-opacity-10">
-        <div class="container">
-            <div class="text-center mb-5">
-                <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">The Rankings</span>
-                <h2 class="display-6 fw-black tracking-tight mb-0 text-body">Top Charts</h2>
-            </div>
-
-            <div class="row g-5">
-                <!-- Top Free -->
-                <div class="col-lg-6">
-                    <h4 class="fw-bold mb-4 text-body d-flex align-items-center gap-2">
-                        <i class="bi bi-graph-up-arrow text-primary"></i> Top Free Apps
-                    </h4>
-                    <div class="d-flex flex-column gap-3">
-                        <!-- Chart Item 1 -->
-                        <div class="card card-custom border-0 p-3 hover-lift">
-                            <div class="d-flex align-items-center gap-4">
-                                <span class="fs-4 fw-black text-muted opacity-50" style="width: 30px;">1</span>
-                                <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-3" width="50" height="50" alt="App">
-                                <div class="flex-grow-1">
-                                    <h6 class="fw-bold mb-0 text-body">SocialSync</h6>
-                                    <p class="text-muted small mb-0">Social Networking</p>
-                                </div>
-                                <button class="btn btn-sm btn-outline-primary rounded-pill px-3">Get</button>
-                            </div>
-                        </div>
-                        <!-- Chart Item 2 -->
-                        <div class="card card-custom border-0 p-3 hover-lift">
-                            <div class="d-flex align-items-center gap-4">
-                                <span class="fs-4 fw-black text-muted opacity-50" style="width: 30px;">2</span>
-                                <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-3" width="50" height="50" alt="App">
-                                <div class="flex-grow-1">
-                                    <h6 class="fw-bold mb-0 text-body">StreamIt</h6>
-                                    <p class="text-muted small mb-0">Video Streaming</p>
-                                </div>
-                                <button class="btn btn-sm btn-outline-primary rounded-pill px-3">Get</button>
-                            </div>
-                        </div>
-                        <!-- Chart Item 3 -->
-                        <div class="card card-custom border-0 p-3 hover-lift">
-                            <div class="d-flex align-items-center gap-4">
-                                <span class="fs-4 fw-black text-muted opacity-50" style="width: 30px;">3</span>
-                                <img src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-3" width="50" height="50" alt="App">
-                                <div class="flex-grow-1">
-                                    <h6 class="fw-bold mb-0 text-body">MapQuest Pro</h6>
-                                    <p class="text-muted small mb-0">Navigation</p>
-                                </div>
-                                <button class="btn btn-sm btn-outline-primary rounded-pill px-3">Get</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Top Paid -->
-                <div class="col-lg-6">
-                    <h4 class="fw-bold mb-4 text-body d-flex align-items-center gap-2">
-                        <i class="bi bi-tag-fill text-secondary"></i> Top Paid Apps
-                    </h4>
-                    <div class="d-flex flex-column gap-3">
-                        <!-- Chart Item 1 -->
-                        <div class="card card-custom border-0 p-3 hover-lift">
-                            <div class="d-flex align-items-center gap-4">
-                                <span class="fs-4 fw-black text-muted opacity-50" style="width: 30px;">1</span>
-                                <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-3" width="50" height="50" alt="App">
-                                <div class="flex-grow-1">
-                                    <h6 class="fw-bold mb-0 text-body">PixelPro Editor</h6>
-                                    <p class="text-muted small mb-0">Photography</p>
-                                </div>
-                                <span class="fw-bold text-primary">$4.99</span>
-                            </div>
-                        </div>
-                        <!-- Chart Item 2 -->
-                        <div class="card card-custom border-0 p-3 hover-lift">
-                            <div class="d-flex align-items-center gap-4">
-                                <span class="fs-4 fw-black text-muted opacity-50" style="width: 30px;">2</span>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/OpenMoji-color_1F9D8.svg"
-                                    class="rounded-3" width="50" height="50" alt="App">
-                                <div class="flex-grow-1">
-                                    <h6 class="fw-bold mb-0 text-body">ZenSpace Calm</h6>
-                                    <p class="text-muted small mb-0">Health & Fitness</p>
-                                </div>
-                                <span class="fw-bold text-primary">$2.99</span>
-                            </div>
-                        </div>
-                        <!-- Chart Item 3 -->
-                        <div class="card card-custom border-0 p-3 hover-lift">
-                            <div class="d-flex align-items-center gap-4">
-                                <span class="fs-4 fw-black text-muted opacity-50" style="width: 30px;">3</span>
-                                <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-3" width="50" height="50" alt="App">
-                                <div class="flex-grow-1">
-                                    <h6 class="fw-bold mb-0 text-body">CloudStorage+</h6>
-                                    <p class="text-muted small mb-0">Utilities</p>
-                                </div>
-                                <span class="fw-bold text-primary">$0.99</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expanded App Content -->
-
-    <!-- 1. Educational Apps Section -->
-    <section class="section-padding bg-body" id="education">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-end mb-5">
-                <div>
-                    <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Learn &
-                        Grow</span>
-                    <h2 class="display-5 fw-black tracking-tight mb-0 text-body">Education Apps</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <!-- App 1 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="Linguist">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">Linguist Pro</h6>
-                                <p class="text-muted small mb-0">Language Learning</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Master 50+ languages with immersive AI conversations and
-                            real-time pronunciation feedback.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="MathFlow">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">MathFlow</h6>
-                                <p class="text-muted small mb-0">STEM Education</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Solve complex equations instantly and understand the logic with
-                            interactive step-by-step guides.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 3 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="HistoryGo">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">HistoryGo VR</h6>
-                                <p class="text-muted small mb-0">Interactive History</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Experience historical events in stunning AR and VR. Walk
-                            through ancient civilizations from your room.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.7</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 4 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="SkillShare">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">SkillSphere</h6>
-                                <p class="text-muted small mb-0">Creative Skills</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Access thousands of masterclasses in design, photography, and
-                            coding from world-class experts.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2. Informational Apps Section -->
-    <section class="section-padding section-bg border-top border-secondary border-opacity-10" id="information">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-end mb-5">
-                <div>
-                    <span class="text-secondary fw-bold text-uppercase tracking-wide small d-block mb-2">Stay
-                        Informed</span>
-                    <h2 class="display-5 fw-black tracking-tight mb-0 text-body">Information Apps</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <!-- App 1 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="NewsSync">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">NewsSync AI</h6>
-                                <p class="text-muted small mb-0">Global News</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Get non-biased, summarized news from 2,000+ sources worldwide,
-                            tailored to your interests.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.6</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="MarketWatch">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">MarketPulse</h6>
-                                <p class="text-muted small mb-0">Finance Info</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Real-time stock, crypto, and commodity alerts with deep dive
-                            technical analysis tools.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 3 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="WeatherPlus">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">SkyCast Ultra</h6>
-                                <p class="text-muted small mb-0">Weather</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Hyper-local weather forecasts with satellite imagery and severe
-                            weather push notifications.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 4 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="WikiMap">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">EncycloMap</h6>
-                                <p class="text-muted small mb-0">Knowledge Base</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">The world's largest repository of human knowledge, mapped out
-                            for easy discovery and offline reading.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.7</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Entertainment Apps Section -->
-    <section class="section-padding bg-body border-top border-secondary border-opacity-10" id="entertainment">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-end mb-5">
-                <div>
-                    <span class="text-tertiary fw-bold text-uppercase tracking-wide small d-block mb-2">Have Fun</span>
-                    <h2 class="display-5 fw-black tracking-tight mb-0 text-body">Entertainment Apps</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <!-- App 1 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="GameZone">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">NovaQuest</h6>
-                                <p class="text-muted small mb-0">Gaming</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">An epic open-world RPG experience with console-quality graphics
-                            and real-time multiplayer combat.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="CinemaPlus">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">StreamNova</h6>
-                                <p class="text-muted small mb-0">Video Streaming</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Stream the latest blockbusters and exclusive 4K indie films
-                            with HDR10+ support.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 3 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1514525253361-bee24387c62b?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="BeatFlow">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">BeatFlow Hi-Fi</h6>
-                                <p class="text-muted small mb-0">Music Streaming</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Lossless audio streaming with spatial sound and personalized
-                            AI-generated playlists for every mood.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 4 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="SocialX">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">VibeNet</h6>
-                                <p class="text-muted small mb-0">Social Media</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Connect with like-minded creators in ad-free interest-based
-                            communities with encrypted messaging.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.6</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Tools Section (Productivity) -->
-    <section class="section-padding section-bg border-top border-secondary border-opacity-10" id="tools">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-end mb-5">
-                <div>
-                    <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Be
-                        Productive</span>
-                    <h2 class="display-5 fw-black tracking-tight mb-0 text-body">Tools & Productivity</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <!-- App 1 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="EmailPro">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">FluxMail AI</h6>
-                                <p class="text-muted small mb-0">Email Client</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Reach Inbox Zero faster with AI-automated sorting and
-                            intelligent draft suggestions.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="TaskFlow">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">OrbitTasks</h6>
-                                <p class="text-muted small mb-0">Task Manager</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">A powerful Kanban and Gantt chart powered task manager for
-                            individual and team collaboration.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 3 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="CodeFlow">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">CodeEdit Pro</h6>
-                                <p class="text-muted small mb-0">Developer Tool</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Full-featured mobile IDE with terminal, git integration, and
-                            real-time cloud compilation.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- App 4 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="CloudStore">
-                            <div>
-                                <h6 class="fw-bold mb-0 text-body">SafeCloud+</h6>
-                                <p class="text-muted small mb-0">Cloud Storage</p>
-                            </div>
-                        </div>
-                        <p class="text-muted small mb-4">Military-grade encrypted cloud storage for your most sensitive
-                            documents and data.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
-                            <button class="btn btn-sm btn-primary rounded-pill px-3">View</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Developer Center -->
-    <section class="section-padding bg-body border-top border-secondary border-opacity-10">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 order-lg-2">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
-                        class="img-fluid rounded-4 shadow-lg" alt="Developer Coding">
-                </div>
-                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
-                    <span class="text-tertiary fw-bold text-uppercase tracking-wide small d-block mb-2">For
-                        Creators</span>
-                    <h2 class="display-5 fw-black mb-4 text-body">Join Our Developer Community</h2>
-                    <p class="lead text-muted mb-4">Are you building the next big thing? Get your app in front of
-                        millions
-                        of users. We provide the tools, analytics, and support to help you scale.</p>
-                    <ul class="list-unstyled mb-5 d-flex flex-column gap-3 text-start mx-auto mx-lg-0"
-                        style="max-width: 400px;">
-                        <li class="d-flex align-items-start gap-3">
-                            <i class="bi bi-check-circle-fill text-primary mt-1"></i>
-                            <span class="text-muted">Global distribution across 200+ countries</span>
-                        </li>
-                        <li class="d-flex align-items-start gap-3">
-                            <i class="bi bi-check-circle-fill text-primary mt-1"></i>
-                            <span class="text-muted">Advanced analytics and user feedback tools</span>
-                        </li>
-                        <li class="d-flex align-items-start gap-3">
-                            <i class="bi bi-check-circle-fill text-primary mt-1"></i>
-                            <span class="text-muted">Competitive revenue sharing models</span>
-                        </li>
-                    </ul>
-                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
-                        <a href="login.html" class="btn btn-primary btn-lg rounded-pill px-5 fw-bold shadow-sm">Submit
-                            Your
-                            App</a>
-                        <a href="#" class="btn btn-outline-secondary btn-lg rounded-pill px-5 fw-bold">Developer
-                            Docs</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. Call to Action Banner -->
-    <section class="section-padding section-bg border-top border-secondary border-opacity-10 text-center">
-        <div class="container">
-            <h2 class="display-6 fw-bold mb-3 text-body">Didn't find what you're looking for?</h2>
-            <p class="text-muted mb-4">Use our advanced search engine to find the exact application you need.</p>
-            <div class="mx-auto" style="max-width: 500px">
-                <div class="input-group input-group-lg shadow-sm">
-                    <span class="input-group-text bg-body text-primary border-primary"><i
-                            class="bi bi-search"></i></span>
-                    <input type="text" class="form-control border-primary" placeholder="Search applications...">
-                    <button class="btn btn-primary px-4 fw-bold">Search</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Spotlight -->
-    <section class="section-padding bg-body border-top border-secondary border-opacity-10">
-        <div class="container">
-            <div class="card card-custom border-0 p-0 overflow-hidden shadow-lg"
-                style="background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-body) 100%);">
-                <div class="row g-0 align-items-center">
-                    <div class="col-lg-6 p-5">
-                        <span class="badge bg-primary bg-opacity-10 text-primary mb-3">Featured App of the Month</span>
-                        <h2 class="display-5 fw-black tracking-tight mb-4 text-body">ZenSpace: Focused Productivity</h2>
-                        <p class="lead text-muted mb-5">Experience the new standard in digital minimalism. ZenSpace
-                            combines advanced AI with a beautiful, distraction-free interface to help you achieve your
-                            deep work goals.</p>
-                        <div class="d-flex gap-3">
-                            <button class="btn btn-primary rounded-pill px-5 py-3 fw-bold">Download Now</button>
-                            <button class="btn btn-outline-secondary rounded-pill px-4 py-3 fw-bold">Learn More</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 p-4">
-                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=800"
-                            class="img-fluid rounded-4 shadow" alt="Featured App">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Design (4 Columns) - Same as index.html -->
     <footer class="footer">
         <div class="container pb-5">
             <div class="row g-5">
-                <!-- Column 1: Brand -->
                 <div class="col-lg-3 col-md-6">
                     <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
                         href="index.html">
@@ -767,7 +246,6 @@
                                 class="bi bi-instagram"></i></a>
                     </div>
                 </div>
-                <!-- Column 2, 3, 4 abbreviated -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Company</h5>
                     <ul class="list-unstyled mb-0">
@@ -789,8 +267,6 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Newsletter</h5>
-                    <p class="opacity-75 small mb-3">Subscribe to get the latest app weekly updates directly to your
-                        inbox.</p>
                     <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
                         <div class="input-group"><input type="email"
                                 class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
@@ -805,12 +281,6 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" aria-label="Back to top">
-        <i class="bi bi-chevron-up"></i>
-    </button>
-
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/script.js"></script>
 </body>

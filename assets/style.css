@@ -220,6 +220,30 @@ a:hover {
     color: var(--primary) !important;
 }
 
+/* Dropdown Customization */
+.dropdown-menu {
+    background-color: var(--header-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 0.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.dropdown-item {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-speed);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary) !important;
+    transform: translateX(4px);
+}
+
 /* Cards */
 .card-custom {
     background-color: var(--card-bg);
@@ -372,4 +396,148 @@ body.dark-mode .offcanvas .btn-close {
 .icon-box-primary {
     background-color: rgba(79, 70, 229, 0.1);
     color: var(--primary);
+}
+
+/* Premium Category Card */
+.card-category-premium {
+    background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%) !important;
+    border: none !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card-category-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: -1;
+}
+
+.card-category-premium:hover {
+    transform: translateY(-8px) scale(1.02) !important;
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.3) !important;
+}
+
+.card-category-premium i,
+.card-category-premium h5,
+.card-category-premium p {
+    color: #ffffff !important;
+}
+
+
+.card-category-premium p {
+    opacity: 0.9;
+}
+
+/* Microsoft Store Style Components */
+.hero-spotlight {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease;
+}
+
+.hero-spotlight:hover {
+    transform: scale(1.005);
+}
+
+.hero-content {
+    padding: 3.5rem;
+    z-index: 2;
+    position: relative;
+    max-width: 60%;
+    background: linear-gradient(90deg, var(--bg-body) 0%, rgba(var(--bg-body-rgb), 0.8) 70%, transparent 100%);
+}
+
+.hero-bg-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    mask-image: linear-gradient(to left, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
+}
+
+.app-list-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+}
+
+.app-list-item:hover {
+    background: rgba(var(--primary-rgb, 79, 70, 229), 0.05);
+    border-color: var(--border-color);
+    color: inherit;
+}
+
+.app-list-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section-title-sm {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.price-tag {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    scrollbar-width: none;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-item {
+    flex: 0 0 280px;
+}
+
+@media (max-width: 991px) {
+    .hero-content {
+        max-width: 100%;
+        background: linear-gradient(180deg, rgba(var(--bg-body-rgb), 0.9) 0%, var(--bg-body) 100%);
+        padding: 2.5rem;
+    }
+
+    .hero-bg-img {
+        width: 100%;
+        opacity: 0.3;
+        mask-image: none;
+    }
 }

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps - Tools</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Theme Toggle Script -->
+    <script src="assets/theme.js"></script>
+
+    <style>
+        .page-header {
+            padding: 120px 0 80px;
+            background-color: var(--bg-body);
+            border-bottom: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
+                <i class="bi bi-boxes fs-4"></i>
+                <span class="fs-4 tracking-tight text-body">Apps</span>
+            </a>
+
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="bi bi-list fs-1 text-body"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
+                        id="offcanvasNavbarLabel">
+                        <i class="bi bi-boxes"></i> <span class="text-body">Apps</span>
+                    </h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="apps.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Apps
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="education.html">Education Apps</a></li>
+                                <li><a class="dropdown-item" href="information.html">Information Apps</a></li>
+                                <li><a class="dropdown-item" href="entertainment.html">Entertainment Apps</a></li>
+                                <li><a class="dropdown-item" href="tools.html">Tools</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                        <a href="login.html" class="nav-link fw-bold">Login</a>
+                        <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
+                        <button
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            style="width: 40px; height: 40px;" aria-label="Toggle Theme">
+                            <i class="bi bi-moon fs-5 text-body"></i>
+                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <header class="page-header text-center border-0 pb-5">
+        <div class="container">
+            <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Be Productive</span>
+            <h1 class="display-4 fw-black tracking-tight mb-4 text-body">Tools & Productivity</h1>
+            <p class="lead text-muted mx-auto mb-0" style="max-width: 600px;">Optimize your workflow and boost
+                efficiency with our curated selection of tools.</p>
+        </div>
+    </header>
+
+    <section class="pb-5 bg-body">
+        <div class="container">
+            <!-- Hero Spotlight -->
+            <div class="hero-spotlight">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200"
+                    class="hero-bg-img" alt="Featured App">
+                <div class="hero-content">
+                    <span class="badge bg-success mb-3">Professional Grade</span>
+                    <h2 class="display-5 fw-bold mb-3 text-body">FluxMail Pro</h2>
+                    <p class="lead text-muted mb-4">The ultimate email client for professionals. Reach Inbox Zero with
+                        advanced AI-automated sorting and intelligent smart-scheduling.</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold">Get</button>
+                        <button class="btn btn-outline-secondary rounded-pill px-4">See Features</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <h3 class="fw-bold m-0 text-body">Essential Tools</h3>
+                <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- App 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=100"
+                                class="rounded-4 shadow-sm" width="60" height="60" alt="EmailPro">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-body">FluxMail AI</h6>
+                                <p class="text-muted small mb-0">Email Client</p>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4">Reach Inbox Zero faster with AI-automated sorting and
+                            intelligent draft suggestions.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
+                            <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- App 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=100"
+                                class="rounded-4 shadow-sm" width="60" height="60" alt="TaskFlow">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-body">OrbitTasks</h6>
+                                <p class="text-muted small mb-0">Task Manager</p>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4">A powerful Kanban and Gantt chart powered task manager for
+                            individual and team collaboration.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</span>
+                            <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- App 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=100"
+                                class="rounded-4 shadow-sm" width="60" height="60" alt="CodeFlow">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-body">CodeEdit Pro</h6>
+                                <p class="text-muted small mb-0">Developer Tool</p>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4">Full-featured mobile IDE with terminal, git integration, and
+                            real-time cloud compilation.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
+                            <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- App 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80&w=100"
+                                class="rounded-4 shadow-sm" width="60" height="60" alt="CloudStore">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-body">SafeCloud+</h6>
+                                <p class="text-muted small mb-0">Cloud Storage</p>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4">Military-grade encrypted cloud storage for your most sensitive
+                            documents and data.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
+                            <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h4 class="section-title-sm"><i class="bi bi-laptop text-primary"></i> Free Productivity</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">Slack</h6>
+                                <p class="text-muted small mb-0">Work • 4.7 <i class="bi bi-star-fill text-warning"></i>
+                                </p>
+                            </div>
+                            <span class="price-tag small text-success">Free</span>
+                        </a>
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">Google Drive</h6>
+                                <p class="text-muted small mb-0">Storage • 4.8 <i
+                                        class="bi bi-star-fill text-warning"></i></p>
+                            </div>
+                            <span class="price-tag small text-success">Free</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="section-title-sm"><i class="bi bi-cpu text-primary"></i> Developer Tools</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">VS Code Mobile</h6>
+                                <p class="text-muted small mb-0">Dev • 4.9 <i class="bi bi-star-fill text-warning"></i>
+                                </p>
+                            </div>
+                            <span class="price-tag small">Free</span>
+                        </a>
+                        <a href="#" class="app-list-item">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=100"
+                                class="app-list-icon" alt="">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold text-body">Postman Pro</h6>
+                                <p class="text-muted small mb-0">API • 4.8 <i class="bi bi-star-fill text-warning"></i>
+                                </p>
+                            </div>
+                            <span class="price-tag small">Subscription</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Developer Essentials Section -->
+            <div class="mt-5 pt-5 border-top border-secondary border-opacity-10">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <h3 class="fw-bold m-0 text-body">Developer Essentials</h3>
+                    <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">DevStack AI</h6>
+                                    <p class="text-muted extra-small mb-0">Infrastructure</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">AI-powered infrastructure monitoring and automated
+                                deployment for modern web apps.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">API Master</h6>
+                                    <p class="text-muted extra-small mb-0">API Development</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Professional API testing and documentation suite with
+                                real-time collaboration tools.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">CloudTerminal</h6>
+                                    <p class="text-muted extra-small mb-0">Remote Ops</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Fully customizable cloud-based terminal with SSH, Git, and
+                                Docker integration.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">SynthCode</h6>
+                                    <p class="text-muted extra-small mb-0">Code Analysis</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Advanced static analysis and security scanning for
+                                multi-language repositories.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security & Privacy Section -->
+            <div class="mt-5 pt-5 border-top border-secondary border-opacity-10">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <h3 class="fw-bold m-0 text-body">Security & Privacy</h3>
+                    <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">VaultGuard</h6>
+                                    <p class="text-muted extra-small mb-0">Password Manager</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Zero-knowledge encryption for all your passwords and
+                                sensitive identity documents.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">PrivaShield</h6>
+                                    <p class="text-muted extra-small mb-0">VPN Tool</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">High-speed, global VPN with advanced ad-blocking and
+                                tracker prevention.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1633265486064-086b21935fcc?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">SecureScan</h6>
+                                    <p class="text-muted extra-small mb-0">Anti-Malware</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Real-time threat detection and removal for all your
+                                synchronized devices.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1510511459019-5dee997ddfdf?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">MetaLock</h6>
+                                    <p class="text-muted extra-small mb-0">File Encryption</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Protect specific files and folders with military-grade,
+                                offline-first encryption.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Utilities Section -->
+            <div class="mt-5 pt-5 border-top border-secondary border-opacity-10">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <h3 class="fw-bold m-0 text-body">System Utilities</h3>
+                    <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">HyperMonitor</h6>
+                                    <p class="text-muted extra-small mb-0">System Health</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Comprehensive real-time monitoring of CPU, RAM, and network
+                                performance indicators.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">DiskCleaner+</h6>
+                                    <p class="text-muted extra-small mb-0">Storage Tools</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Intelligent storage cleanup and optimization to keep your
+                                device running at peak speed.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">QuickTransfer</h6>
+                                    <p class="text-muted extra-small mb-0">File Sharing</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Blazing fast P2P file transfer across all local and remote
+                                devices with no size limits.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=100"
+                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-body">DevConsole</h6>
+                                    <p class="text-muted extra-small mb-0">Admin Tools</p>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-4">Powerful administrative console for managing services,
+                                logs, and system background tasks.</p>
+                            <button
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
+                        href="index.html">
+                        <i
+                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
+                        Apps
+                    </a>
+                    <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
+                        downloading the world's best mobile applications safely.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-twitter-x"></i></a><a href="#"
+                            class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a><a
+                            href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html#about" class="footer-link">About Us</a></li>
+                        <li><a href="about.html#services" class="footer-link">Our Services</a></li>
+                        <li><a href="about.html#blogs" class="footer-link">Blogs</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="about.html#pricing" class="footer-link">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Support</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="about.html#contact" class="footer-link">Contact Support</a></li>
+                        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
+                        <div class="input-group"><input type="email"
+                                class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
+                                placeholder="Email address" required></div><button
+                            class="btn btn-primary w-100 fw-bold">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-5 border-top border-secondary border-opacity-25 opacity-50 small">
+                © 2026 Apps. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

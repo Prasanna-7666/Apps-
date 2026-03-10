@@ -234,8 +234,6 @@
 <body>
 
     <!-- Back Home btn & Theme toggle -->
-    <a href="index.html" class="position-absolute top-0 start-0 m-4 fw-bold text-decoration-none z-3"><i
-            class="bi bi-arrow-left"></i> Home</a>
     <button class="theme-toggle position-absolute top-0 end-0 m-4 btn btn-link text-body p-0 z-3"
         aria-label="Toggle Theme"><i class="bi bi-sun fs-4"></i></button>
 
@@ -246,7 +244,9 @@
             <div class="w-100 bg-body">
                 <form action="dashboard.html" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
                     <div class="text-center mb-4">
-                        <i class="bi bi-boxes fs-2 text-primary mb-2 d-inline-block"></i>
+                        <a href="index.html" class="text-decoration-none">
+                            <i class="bi bi-boxes fs-2 text-primary mb-2 d-inline-block"></i>
+                        </a>
                         <h2 class="fw-bold text-body mb-1">Sign in</h2>
                         <p class="text-muted small">Enter your credentials to access the dashboard</p>
                     </div>
