@@ -32,7 +32,7 @@
 <body>
 
     <!-- Header Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
+    <nav class="navbar navbar-expand-md sticky-top bg-body border-bottom border-light border-opacity-10">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
                 <i class="bi bi-boxes fs-4"></i>
@@ -44,7 +44,7 @@
                 <i class="bi bi-list fs-1 text-body"></i>
             </button>
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-start bg-body" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header border-bottom">
                     <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
                         <li class="nav-item dropdown">
@@ -74,14 +74,14 @@
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-md-0">
                         <a href="login.html" class="nav-link fw-bold">Login</a>
                         <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
                         <button
-                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-md-2"
                             style="width: 40px; height: 40px;" aria-label="Toggle Theme">
                             <i class="bi bi-moon fs-5 text-body"></i>
-                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                            <span class="theme-text d-md-none ms-2 text-body">Dark Mode</span>
                         </button>
                     </div>
                 </div>
@@ -122,11 +122,11 @@
                 <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
             </div>
 
-            <div class="row g-4 mb-5">
+            <div class="row g-4 mb-5 justify-content-center">
                 <!-- App 1 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="NewsSync">
                             <div>
@@ -136,7 +136,7 @@
                         </div>
                         <p class="text-muted small mb-4">Get non-biased, summarized news from 2,000+ sources worldwide,
                             tailored to your interests.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.6</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -144,8 +144,8 @@
                 </div>
                 <!-- App 2 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="MarketWatch">
                             <div>
@@ -155,7 +155,7 @@
                         </div>
                         <p class="text-muted small mb-4">Real-time stock, crypto, and commodity alerts with deep dive
                             technical analysis tools.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -163,8 +163,8 @@
                 </div>
                 <!-- App 3 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="WeatherPlus">
                             <div>
@@ -174,7 +174,7 @@
                         </div>
                         <p class="text-muted small mb-4">Hyper-local weather forecasts with satellite imagery and severe
                             weather push notifications.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -182,8 +182,8 @@
                 </div>
                 <!-- App 4 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="WikiMap">
                             <div>
@@ -193,7 +193,7 @@
                         </div>
                         <p class="text-muted small mb-4">The world's largest repository of human knowledge, mapped out
                             for easy discovery and offline reading.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.7</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -258,10 +258,10 @@
                 <h3 class="fw-bold mb-4 text-body">Trending Topics</h3>
                 <div class="scroll-container">
                     <div class="scroll-item">
-                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift d-flex flex-column text-center">
                             <div class="d-flex align-items-center gap-3 mb-2">
-                                <img src="https://images.unsplash.com/photo-1585829365294-4cc046272888?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-3" width="48" height="48" alt="">
+                                <img src="assets/stockalert.png" class="rounded-3" width="48" height="48"
+                                    alt="StockAlert">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body small">StockAlert</h6>
                                     <span class="text-muted extra-small">New • 4.8</span>
@@ -271,7 +271,7 @@
                         </div>
                     </div>
                     <div class="scroll-item">
-                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift d-flex flex-column text-center">
                             <div class="d-flex align-items-center gap-3 mb-2">
                                 <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-3" width="48" height="48" alt="">
@@ -291,12 +291,12 @@
                     <h3 class="fw-bold m-0 text-body">Global News & Politics</h3>
                     <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1572949645841-394751849113?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                                <img src="assets/worldwire.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                    alt="WorldWire">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body">WorldWire</h6>
                                     <p class="text-muted extra-small mb-0">Live Updates</p>
@@ -305,12 +305,12 @@
                             <p class="text-muted small mb-4">Deep coverage of international events with local
                                 perspectives from 150+ countries.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -321,14 +321,14 @@
                             <p class="text-muted small mb-4">Unbiased tracking of legislative changes and political
                                 shifts across the globe.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1541872703-74c5e443d1fe?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                                <img src="assets/diplomacy360.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                    alt="Diplomacy360">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body">Diplomacy360</h6>
                                     <p class="text-muted extra-small mb-0">Global Policy</p>
@@ -337,12 +337,12 @@
                             <p class="text-muted small mb-4">Expert insights into international relations and strategic
                                 global planning.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -353,7 +353,7 @@
                             <p class="text-muted small mb-4">The fastest notifications for world-changing events,
                                 verified by AI.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                 </div>
@@ -365,12 +365,12 @@
                     <h3 class="fw-bold m-0 text-body">Financial Insights</h3>
                     <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1611974714158-f80e06001712?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                                <img src="assets/trademaster.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                    alt="TradeMaster AI">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body">TradeMaster AI</h6>
                                     <p class="text-muted extra-small mb-0">Market Analytics</p>
@@ -379,12 +379,12 @@
                             <p class="text-muted small mb-4">Predictive modeling for stock and crypto markets with
                                 real-time sentiment analysis.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -395,14 +395,14 @@
                             <p class="text-muted small mb-4">Unified dashboard for all your investments, from
                                 traditional stocks to digital assets.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1526303328184-97596f543ba2?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                                <img src="assets/cryptoscout.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                    alt="CryptoScout">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body">CryptoScout</h6>
                                     <p class="text-muted extra-small mb-0">Blockchain Info</p>
@@ -411,14 +411,14 @@
                             <p class="text-muted small mb-4">Real-time on-chain data and whale tracking for the most
                                 active crypto networks.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1518186239745-63bc7250e68d?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                                <img src="assets/econmetric.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                    alt="EconMetric">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body">EconMetric</h6>
                                     <p class="text-muted extra-small mb-0">Macro Data</p>
@@ -427,7 +427,7 @@
                             <p class="text-muted small mb-4">Visualized macroeconomic indicators and historical data for
                                 190+ economies.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                 </div>
@@ -439,10 +439,10 @@
                     <h3 class="fw-bold m-0 text-body">Tech & Science</h3>
                     <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -453,12 +453,12 @@
                             <p class="text-muted small mb-4">The latest in semiconductor technology, gadgets, and
                                 computing hardware.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -469,12 +469,12 @@
                             <p class="text-muted small mb-4">Stay ahead of medical breakthroughs and advancements in
                                 biotechnology.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -485,12 +485,12 @@
                             <p class="text-muted small mb-4">Real-time mission tracking and high-resolution space
                                 photography from global agencies.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -501,7 +501,7 @@
                             <p class="text-muted small mb-4">The ultimate source for artificial intelligence research,
                                 tools, and ethical developments.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                 </div>
@@ -510,26 +510,28 @@
     </section>
 
 
+    <!-- 7. Footer Design (4 Columns) -->
     <footer class="footer">
         <div class="container pb-5">
             <div class="row g-5">
+                <!-- Column 1: Brand -->
                 <div class="col-lg-3 col-md-6">
-                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
-                        href="index.html">
-                        <i
-                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
-                        Apps
+                    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary mb-3" href="index.html">
+                        <i class="bi bi-boxes fs-4"></i>
+                        <span class="fs-4 tracking-tight text-body">Apps</span>
                     </a>
                     <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
                         downloading the world's best mobile applications safely.</p>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
-                                class="bi bi-twitter-x"></i></a><a href="#"
-                            class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a><a
-                            href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
                                 class="bi bi-instagram"></i></a>
                     </div>
                 </div>
+
+                <!-- Column 2: Company -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Company</h5>
                     <ul class="list-unstyled mb-0">
@@ -540,6 +542,8 @@
                         <li><a href="about.html#pricing" class="footer-link">Pricing Plans</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 3: Support -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Support</h5>
                     <ul class="list-unstyled mb-0">
@@ -549,16 +553,23 @@
                         <li><a href="#" class="footer-link">Terms & Conditions</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 4: Newsletter -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Newsletter</h5>
+                    <p class="opacity-75 small mb-3">Subscribe to get the latest app weekly updates directly to your
+                        inbox.</p>
                     <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
-                        <div class="input-group"><input type="email"
+                        <div class="input-group">
+                            <input type="email"
                                 class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
-                                placeholder="Email address" required></div><button
-                            class="btn btn-primary w-100 fw-bold">Subscribe</button>
+                                placeholder="Email address" required>
+                        </div>
+                        <button class="btn btn-primary w-100 fw-bold">Subscribe</button>
                     </form>
                 </div>
             </div>
+
             <div class="text-center pt-4 mt-5 border-top border-secondary border-opacity-25 opacity-50 small">
                 © 2026 Apps. All rights reserved.
             </div>

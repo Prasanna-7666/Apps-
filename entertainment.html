@@ -32,7 +32,7 @@
 <body>
 
     <!-- Header Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
+    <nav class="navbar navbar-expand-md sticky-top bg-body border-bottom border-light border-opacity-10">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
                 <i class="bi bi-boxes fs-4"></i>
@@ -44,7 +44,7 @@
                 <i class="bi bi-list fs-1 text-body"></i>
             </button>
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-start bg-body" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header border-bottom">
                     <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
                         <li class="nav-item dropdown">
@@ -74,14 +74,14 @@
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-md-0">
                         <a href="login.html" class="nav-link fw-bold">Login</a>
                         <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
                         <button
-                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-md-2"
                             style="width: 40px; height: 40px;" aria-label="Toggle Theme">
                             <i class="bi bi-moon fs-5 text-body"></i>
-                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                            <span class="theme-text d-md-none ms-2 text-body">Dark Mode</span>
                         </button>
                     </div>
                 </div>
@@ -122,11 +122,11 @@
                 <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
             </div>
 
-            <div class="row g-4 mb-5">
+            <div class="row g-4 mb-5 justify-content-center">
                 <!-- App 1 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="GameZone">
                             <div>
@@ -136,7 +136,7 @@
                         </div>
                         <p class="text-muted small mb-4">An epic open-world RPG experience with console-quality graphics
                             and real-time multiplayer combat.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -144,8 +144,8 @@
                 </div>
                 <!-- App 2 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="CinemaPlus">
                             <div>
@@ -155,7 +155,7 @@
                         </div>
                         <p class="text-muted small mb-4">Stream the latest blockbusters and exclusive 4K indie films
                             with HDR10+ support.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -163,10 +163,10 @@
                 </div>
                 <!-- App 3 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1514525253361-bee24387c62b?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="BeatFlow">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                            <img src="assets/beatflow.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                alt="BeatFlow">
                             <div>
                                 <h6 class="fw-bold mb-0 text-body">BeatFlow Hi-Fi</h6>
                                 <p class="text-muted small mb-0">Music Streaming</p>
@@ -174,7 +174,7 @@
                         </div>
                         <p class="text-muted small mb-4">Lossless audio streaming with spatial sound and personalized
                             AI-generated playlists for every mood.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -182,8 +182,8 @@
                 </div>
                 <!-- App 4 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="SocialX">
                             <div>
@@ -193,7 +193,7 @@
                         </div>
                         <p class="text-muted small mb-4">Connect with like-minded creators in ad-free interest-based
                             communities with encrypted messaging.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.6</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -231,8 +231,7 @@
                     <h4 class="section-title-sm"><i class="bi bi-film text-primary"></i> Premium Streaming</h4>
                     <div class="d-flex flex-column gap-2">
                         <a href="#" class="app-list-item">
-                            <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=100"
-                                class="app-list-icon" alt="">
+                            <img src="assets/netflix.png" class="app-list-icon" alt="">
                             <div class="flex-grow-1">
                                 <h6 class="mb-0 fw-bold text-body">Netflix</h6>
                                 <p class="text-muted small mb-0">Movies • 4.8 <i
@@ -241,8 +240,7 @@
                             <span class="price-tag small">Subscription</span>
                         </a>
                         <a href="#" class="app-list-item">
-                            <img src="https://images.unsplash.com/photo-1514525253361-bee24387c62b?auto=format&fit=crop&q=80&w=100"
-                                class="app-list-icon" alt="">
+                            <img src="assets/spotify.png" class="app-list-icon" alt="">
                             <div class="flex-grow-1">
                                 <h6 class="mb-0 fw-bold text-body">Spotify Premium</h6>
                                 <p class="text-muted small mb-0">Music • 4.9 <i
@@ -258,7 +256,7 @@
                 <h3 class="fw-bold mb-4 text-body">New Entertainment</h3>
                 <div class="scroll-container">
                     <div class="scroll-item">
-                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift d-flex flex-column text-center">
                             <div class="d-flex align-items-center gap-3 mb-2">
                                 <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-3" width="48" height="48" alt="">
@@ -278,10 +276,10 @@
                     <h3 class="fw-bold m-0 text-body">Streaming & Movies</h3>
                     <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -292,12 +290,12 @@
                             <p class="text-muted small mb-4">Access a vast library of award-winning independent films
                                 and classic cinema in 4K.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -308,14 +306,14 @@
                             <p class="text-muted small mb-4">Discover the world's most compelling true stories and
                                 investigative series.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1598897349489-44769b7b1ace?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                                <img src="assets/animevault.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                    alt="">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body">AnimeVault</h6>
                                     <p class="text-muted extra-small mb-0">Anime Streaming</p>
@@ -324,12 +322,12 @@
                             <p class="text-muted small mb-4">Your destination for the latest simulcasts and legendary
                                 anime series from Japan.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -340,7 +338,7 @@
                             <p class="text-muted small mb-4">Curated short-form content from the world's best
                                 up-and-coming filmmakers.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                 </div>
@@ -352,10 +350,10 @@
                     <h3 class="fw-bold m-0 text-body">Gaming Universe</h3>
                     <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -366,12 +364,12 @@
                             <p class="text-muted small mb-4">Competitive multiplayer combat with cross-platform play and
                                 seasonal tournaments.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -382,12 +380,12 @@
                             <p class="text-muted small mb-4">Retro-style platforming with modern mechanics and a deep,
                                 branching narrative.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -398,12 +396,12 @@
                             <p class="text-muted small mb-4">Build and manage your own thriving civilization through the
                                 ages in real-time.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -414,7 +412,7 @@
                             <p class="text-muted small mb-4">High-octane arcade racing with customizable cars and
                                 hyper-realistic tracks.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                 </div>
@@ -426,12 +424,12 @@
                     <h3 class="fw-bold m-0 text-body">Music & Podcasts</h3>
                     <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1514525253361-bee24387c62b?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                                <img src="assets/audiostream.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                    alt="">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body">AudioStream</h6>
                                     <p class="text-muted extra-small mb-0">Music Streaming</p>
@@ -440,12 +438,12 @@
                             <p class="text-muted small mb-4">Lossless audio quality with a catalog of 70M+ tracks and
                                 curated radio stations.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -456,12 +454,12 @@
                             <p class="text-muted small mb-4">The ultimate directory for all things podcast, with
                                 exclusive original series.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -472,12 +470,12 @@
                             <p class="text-muted small mb-4">Professional-grade mobile recording and composition tools
                                 for musicians.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -488,7 +486,7 @@
                             <p class="text-muted small mb-4">Listen to over 50,000 live radio stations from around the
                                 world in one place.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                 </div>
@@ -497,26 +495,28 @@
     </section>
 
 
+    <!-- 7. Footer Design (4 Columns) -->
     <footer class="footer">
         <div class="container pb-5">
             <div class="row g-5">
+                <!-- Column 1: Brand -->
                 <div class="col-lg-3 col-md-6">
-                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
-                        href="index.html">
-                        <i
-                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
-                        Apps
+                    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary mb-3" href="index.html">
+                        <i class="bi bi-boxes fs-4"></i>
+                        <span class="fs-4 tracking-tight text-body">Apps</span>
                     </a>
                     <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
                         downloading the world's best mobile applications safely.</p>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
-                                class="bi bi-twitter-x"></i></a><a href="#"
-                            class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a><a
-                            href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
                                 class="bi bi-instagram"></i></a>
                     </div>
                 </div>
+
+                <!-- Column 2: Company -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Company</h5>
                     <ul class="list-unstyled mb-0">
@@ -527,6 +527,8 @@
                         <li><a href="about.html#pricing" class="footer-link">Pricing Plans</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 3: Support -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Support</h5>
                     <ul class="list-unstyled mb-0">
@@ -536,16 +538,23 @@
                         <li><a href="#" class="footer-link">Terms & Conditions</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 4: Newsletter -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Newsletter</h5>
+                    <p class="opacity-75 small mb-3">Subscribe to get the latest app weekly updates directly to your
+                        inbox.</p>
                     <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
-                        <div class="input-group"><input type="email"
+                        <div class="input-group">
+                            <input type="email"
                                 class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
-                                placeholder="Email address" required></div><button
-                            class="btn btn-primary w-100 fw-bold">Subscribe</button>
+                                placeholder="Email address" required>
+                        </div>
+                        <button class="btn btn-primary w-100 fw-bold">Subscribe</button>
                     </form>
                 </div>
             </div>
+
             <div class="text-center pt-4 mt-5 border-top border-secondary border-opacity-25 opacity-50 small">
                 © 2026 Apps. All rights reserved.
             </div>

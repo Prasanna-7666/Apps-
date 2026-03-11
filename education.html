@@ -32,7 +32,7 @@
 <body>
 
     <!-- Header Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
+    <nav class="navbar navbar-expand-md sticky-top bg-body border-bottom border-light border-opacity-10">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
                 <i class="bi bi-boxes fs-4"></i>
@@ -44,7 +44,7 @@
                 <i class="bi bi-list fs-1 text-body"></i>
             </button>
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-start bg-body" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header border-bottom">
                     <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
                         <li class="nav-item dropdown">
@@ -74,14 +74,14 @@
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-md-0">
                         <a href="login.html" class="nav-link fw-bold">Login</a>
                         <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
                         <button
-                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-md-2"
                             style="width: 40px; height: 40px;" aria-label="Toggle Theme">
                             <i class="bi bi-moon fs-5 text-body"></i>
-                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                            <span class="theme-text d-md-none ms-2 text-body">Dark Mode</span>
                         </button>
                     </div>
                 </div>
@@ -122,13 +122,13 @@
                 <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
             </div>
 
-            <div class="row g-4 mb-5">
+            <div class="row g-4 mb-5 justify-content-center">
                 <!-- App 1 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
-                                class="rounded-4 shadow-sm" width="60" height="60" alt="Linguist">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                            <img src="assets/linguist-pro.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                alt="Linguist">
                             <div>
                                 <h6 class="fw-bold mb-0 text-body">Linguist Pro</h6>
                                 <p class="text-muted small mb-0">Language Learning</p>
@@ -136,7 +136,7 @@
                         </div>
                         <p class="text-muted small mb-4">Master 50+ languages with immersive AI conversations and
                             real-time pronunciation feedback.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -144,8 +144,8 @@
                 </div>
                 <!-- App 2 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="MathFlow">
                             <div>
@@ -155,7 +155,7 @@
                         </div>
                         <p class="text-muted small mb-4">Solve complex equations instantly and understand the logic with
                             interactive step-by-step guides.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.8</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -163,8 +163,8 @@
                 </div>
                 <!-- App 3 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="HistoryGo">
                             <div>
@@ -174,7 +174,7 @@
                         </div>
                         <p class="text-muted small mb-4">Experience historical events in stunning AR and VR. Walk
                             through ancient civilizations from your room.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.7</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -182,8 +182,8 @@
                 </div>
                 <!-- App 4 -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                        <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-3">
                             <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=100"
                                 class="rounded-4 shadow-sm" width="60" height="60" alt="SkillShare">
                             <div>
@@ -193,7 +193,7 @@
                         </div>
                         <p class="text-muted small mb-4">Access thousands of masterclasses in design, photography, and
                             coding from world-class experts.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <div class="d-flex justify-content-center gap-3 align-items-center mt-auto">
                             <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
                             <button class="btn btn-sm btn-primary rounded-pill px-3">Get</button>
                         </div>
@@ -207,8 +207,7 @@
                     <h4 class="section-title-sm"><i class="bi bi-gift text-primary"></i> Top Free Apps</h4>
                     <div class="d-flex flex-column gap-2">
                         <a href="#" class="app-list-item">
-                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
-                                class="app-list-icon" alt="">
+                            <img src="assets/duolingo.png" class="app-list-icon" alt="">
                             <div class="flex-grow-1">
                                 <h6 class="mb-0 fw-bold text-body">Duolingo</h6>
                                 <p class="text-muted small mb-0">Education • 4.7 <i
@@ -252,8 +251,7 @@
                             <span class="price-tag small">$4.99</span>
                         </a>
                         <a href="#" class="app-list-item">
-                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
-                                class="app-list-icon" alt="">
+                            <img src="assets/forest.png" class="app-list-icon" alt="">
                             <div class="flex-grow-1">
                                 <h6 class="mb-0 fw-bold text-body">Forest: Stay Focused</h6>
                                 <p class="text-muted small mb-0">Efficiency • 4.8 <i
@@ -281,10 +279,9 @@
                 <div class="scroll-container">
                     <!-- Item 1 -->
                     <div class="scroll-item">
-                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift d-flex flex-column text-center">
                             <div class="d-flex align-items-center gap-3 mb-2">
-                                <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-3" width="48" height="48" alt="">
+                                <img src="assets/flashcard-ai.png" class="rounded-3" width="48" height="48" alt="">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body small">FlashCard AI</h6>
                                     <span class="text-muted extra-small">New • 4.9</span>
@@ -295,7 +292,7 @@
                     </div>
                     <!-- Item 2 -->
                     <div class="scroll-item">
-                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift d-flex flex-column text-center">
                             <div class="d-flex align-items-center gap-3 mb-2">
                                 <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-3" width="48" height="48" alt="">
@@ -309,7 +306,7 @@
                     </div>
                     <!-- Item 3 -->
                     <div class="scroll-item">
-                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift d-flex flex-column text-center">
                             <div class="d-flex align-items-center gap-3 mb-2">
                                 <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-3" width="48" height="48" alt="">
@@ -323,10 +320,9 @@
                     </div>
                     <!-- Item 4 -->
                     <div class="scroll-item">
-                        <div class="card card-custom border-0 p-3 h-100 hover-lift">
+                        <div class="card card-custom border-0 p-3 h-100 hover-lift d-flex flex-column text-center">
                             <div class="d-flex align-items-center gap-3 mb-2">
-                                <img src="https://images.unsplash.com/photo-1588675646184-f5b0b0b0b2f8?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-3" width="48" height="48" alt="">
+                                <img src="assets/skillsync.png" class="rounded-3" width="48" height="48" alt="">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body small">SkillSync</h6>
                                     <span class="text-muted extra-small">New • 4.9</span>
@@ -343,10 +339,10 @@
                     <h3 class="fw-bold m-0 text-body">Language Learning</h3>
                     <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -357,14 +353,14 @@
                             <p class="text-muted small mb-4">Advanced speech recognition to perfect your accent in 30+
                                 languages.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1546410531-bb4caa1b424d?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                                <img src="assets/vocabmaster.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                    alt="VocabMaster">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body">VocabMaster</h6>
                                     <p class="text-muted extra-small mb-0">Daily word power</p>
@@ -373,12 +369,12 @@
                             <p class="text-muted small mb-4">Master 10,000+ words with spaced repetition and visual
                                 mnemonics.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -389,12 +385,12 @@
                             <p class="text-muted small mb-4">Practice real-world scenarios with our intelligent AI
                                 language coaches.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -405,7 +401,7 @@
                             <p class="text-muted small mb-4">The ultimate writing companion for perfect grammar and
                                 style in any language.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                 </div>
@@ -417,10 +413,10 @@
                     <h3 class="fw-bold m-0 text-body">STEM & Coding</h3>
                     <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -431,12 +427,12 @@
                             <p class="text-muted small mb-4">Hands-on interactive lessons for Python, JavaScript, and
                                 more.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -447,12 +443,12 @@
                             <p class="text-muted small mb-4">Interactive simulations that make complex math concepts
                                 easy to grasp.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -463,12 +459,12 @@
                             <p class="text-muted small mb-4">Virtual lab experiments and AR discoveries for young
                                 scientists.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -479,7 +475,7 @@
                             <p class="text-muted small mb-4">Sharpen your critical thinking skills with 500+ challenging
                                 logic grids.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                 </div>
@@ -491,10 +487,10 @@
                     <h3 class="fw-bold m-0 text-body">Creative Arts & Music</h3>
                     <a href="#" class="text-primary text-decoration-none small fw-bold">See All</a>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -505,12 +501,12 @@
                             <p class="text-muted small mb-4">Professional-grade digital painting and sculpting in
                                 virtual space.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -521,12 +517,12 @@
                             <p class="text-muted small mb-4">Learn music theory and instrument play with real-time
                                 feedback.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
                                 <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80&w=100"
                                     class="rounded-4 shadow-sm" width="60" height="60" alt="">
                                 <div>
@@ -537,14 +533,14 @@
                             <p class="text-muted small mb-4">Comprehensive lessons in lighting, composition, and
                                 post-processing.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card card-custom border-0 p-4 h-100 hover-lift">
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <img src="https://images.unsplash.com/photo-1544924202-7dec3bc17942?auto=format&fit=crop&q=80&w=100"
-                                    class="rounded-4 shadow-sm" width="60" height="60" alt="">
+                        <div class="card card-custom border-0 p-4 h-100 hover-lift d-flex flex-column text-center">
+                            <div class="d-flex flex-column align-items-center gap-2 mb-3">
+                                <img src="assets/designsync.png" class="rounded-4 shadow-sm" width="60" height="60"
+                                    alt="DesignSync">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-body">DesignSync</h6>
                                     <p class="text-muted extra-small mb-0">UI/UX Basics</p>
@@ -553,7 +549,7 @@
                             <p class="text-muted small mb-4">Learn user interface design principles with hands-on
                                 projects and tutorials.</p>
                             <button
-                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-start">Get</button>
+                                class="btn btn-sm btn-primary rounded-pill px-3 mt-auto align-self-center">Get</button>
                         </div>
                     </div>
                 </div>
@@ -562,26 +558,28 @@
     </section>
 
 
+    <!-- 7. Footer Design (4 Columns) -->
     <footer class="footer">
         <div class="container pb-5">
             <div class="row g-5">
+                <!-- Column 1: Brand -->
                 <div class="col-lg-3 col-md-6">
-                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
-                        href="index.html">
-                        <i
-                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
-                        Apps
+                    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary mb-3" href="index.html">
+                        <i class="bi bi-boxes fs-4"></i>
+                        <span class="fs-4 tracking-tight text-body">Apps</span>
                     </a>
                     <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
                         downloading the world's best mobile applications safely.</p>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
-                                class="bi bi-twitter-x"></i></a><a href="#"
-                            class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a><a
-                            href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
                                 class="bi bi-instagram"></i></a>
                     </div>
                 </div>
+
+                <!-- Column 2: Company -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Company</h5>
                     <ul class="list-unstyled mb-0">
@@ -592,6 +590,8 @@
                         <li><a href="about.html#pricing" class="footer-link">Pricing Plans</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 3: Support -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Support</h5>
                     <ul class="list-unstyled mb-0">
@@ -601,16 +601,23 @@
                         <li><a href="#" class="footer-link">Terms & Conditions</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 4: Newsletter -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Newsletter</h5>
+                    <p class="opacity-75 small mb-3">Subscribe to get the latest app weekly updates directly to your
+                        inbox.</p>
                     <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
-                        <div class="input-group"><input type="email"
+                        <div class="input-group">
+                            <input type="email"
                                 class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
-                                placeholder="Email address" required></div><button
-                            class="btn btn-primary w-100 fw-bold">Subscribe</button>
+                                placeholder="Email address" required>
+                        </div>
+                        <button class="btn btn-primary w-100 fw-bold">Subscribe</button>
                     </form>
                 </div>
             </div>
+
             <div class="text-center pt-4 mt-5 border-top border-secondary border-opacity-25 opacity-50 small">
                 © 2026 Apps. All rights reserved.
             </div>

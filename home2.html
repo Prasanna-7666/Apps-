@@ -122,7 +122,7 @@
 <body>
 
     <!-- Header Navigation (Same) -->
-    <nav class="navbar navbar-expand-lg fixed-top border-bottom border-light border-opacity-10"
+    <nav class="navbar navbar-expand-md fixed-top z-3 border-bottom border-light border-opacity-10"
         style="background: rgba(var(--bg-body-rgb), 0.8) !important;">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
@@ -135,7 +135,7 @@
                 <i class="bi bi-list fs-1 text-body"></i>
             </button>
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-start bg-body" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header border-bottom">
                     <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
@@ -147,7 +147,7 @@
                 </div>
 
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link active" href="home2.html">Home 2</a></li>
                         <li class="nav-item dropdown">
@@ -165,14 +165,14 @@
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-md-0">
                         <a href="login.html" class="nav-link fw-bold">Login</a>
                         <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
                         <button
-                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-md-2"
                             style="width: 40px; height: 40px;" aria-label="Toggle Theme">
                             <i class="bi bi-moon fs-5 text-body"></i>
-                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                            <span class="theme-text d-md-none ms-2 text-body">Dark Mode</span>
                         </button>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
     </header>
 
     <!-- 2. Trending Apps (Animated Cards) -->
-    <section class="section-padding bg-body" id="trending">
+    <section class="section-padding section-bg" id="trending">
         <div class="container">
             <div class="text-center mb-5 fade-in-up">
                 <span class="text-secondary fw-bold text-uppercase tracking-wide small d-block mb-2">HOTTEST
@@ -256,14 +256,15 @@
                 <h2 class="display-6 fw-bold m-0 text-body">Trending Apps Today</h2>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <!-- Advanced Card 1 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom border-0 p-4 hover-lift h-100 position-relative overflow-hidden">
+                    <div
+                        class="card card-custom border-0 p-4 hover-lift h-100 position-relative overflow-hidden text-center">
                         <div class="position-absolute top-0 end-0 bg-secondary text-white fw-bold px-3 py-1 rounded-bl"
                             style="border-bottom-left-radius: 12px; font-size: 0.8rem;">#1 Grossing</div>
                         <img src="assets/app_icon_1_1772698801287.png" alt="Icon"
-                            class="app-icon-img mb-3 mt-2 shadow-sm"
+                            class="app-icon-img mx-auto d-block mb-3 mt-2 shadow-sm"
                             style="width: 70px; height: 70px; border-radius: 18%;">
                         <h4 class="fw-bold text-body">CreatorBox</h4>
                         <p class="text-muted small">Everything a social media manager needs to automate scheduling and
@@ -277,9 +278,10 @@
 
                 <!-- Advanced Card 2 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom border-0 p-4 hover-lift h-100 position-relative overflow-hidden">
+                    <div
+                        class="card card-custom border-0 p-4 hover-lift h-100 position-relative overflow-hidden text-center">
                         <img src="assets/app_icon_2_1772698818179.png" alt="Icon"
-                            class="app-icon-img mb-3 mt-2 shadow-sm"
+                            class="app-icon-img mx-auto d-block mb-3 mt-2 shadow-sm"
                             style="width: 70px; height: 70px; border-radius: 18%;">
                         <h4 class="fw-bold text-body">ZenSpace</h4>
                         <p class="text-muted small">Binaural beats and guided meditations to improve focus and deep
@@ -294,11 +296,12 @@
 
                 <!-- Advanced Card 3 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom border-0 p-4 hover-lift h-100 position-relative overflow-hidden">
+                    <div
+                        class="card card-custom border-0 p-4 hover-lift h-100 position-relative overflow-hidden text-center">
                         <div class="position-absolute top-0 end-0 bg-primary text-white fw-bold px-3 py-1 rounded-bl shadow-sm"
                             style="border-bottom-left-radius: 12px; font-size: 0.8rem;">Editor's Choice</div>
                         <img src="assets/app_icon_3_1772698965992.png" alt="Icon"
-                            class="app-icon-img mb-3 mt-2 shadow-sm"
+                            class="app-icon-img mx-auto d-block mb-3 mt-2 shadow-sm"
                             style="width: 70px; height: 70px; border-radius: 18%;">
                         <h4 class="fw-bold text-body">AILens</h4>
                         <p class="text-muted small">Real-time object translation and augmented reality overlay using
@@ -523,16 +526,15 @@
     </section>
 
     <!-- Footer Design (4 Columns) - Same as index.html -->
+    <!-- 7. Footer Design (4 Columns) -->
     <footer class="footer">
         <div class="container pb-5">
             <div class="row g-5">
                 <!-- Column 1: Brand -->
                 <div class="col-lg-3 col-md-6">
-                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
-                        href="index.html">
-                        <i
-                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
-                        Apps
+                    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary mb-3" href="index.html">
+                        <i class="bi bi-boxes fs-4"></i>
+                        <span class="fs-4 tracking-tight text-body">Apps</span>
                     </a>
                     <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
                         downloading the world's best mobile applications safely.</p>
@@ -545,7 +547,7 @@
                     </div>
                 </div>
 
-                <!-- Column 2, 3, 4 abbreviated for brevity... -->
+                <!-- Column 2: Company -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Company</h5>
                     <ul class="list-unstyled mb-0">
@@ -556,20 +558,29 @@
                         <li><a href="about.html#pricing" class="footer-link">Pricing Plans</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 3: Support -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Support</h5>
                     <ul class="list-unstyled mb-0">
                         <li><a href="#" class="footer-link">Help Center</a></li>
                         <li><a href="#" class="footer-link">FAQ</a></li>
                         <li><a href="about.html#contact" class="footer-link">Contact Support</a></li>
+                        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 4: Newsletter -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Newsletter</h5>
+                    <p class="opacity-75 small mb-3">Subscribe to get the latest app weekly updates directly to your
+                        inbox.</p>
                     <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
-                        <input type="email"
-                            class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
-                            placeholder="Email" required>
+                        <div class="input-group">
+                            <input type="email"
+                                class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
+                                placeholder="Email address" required>
+                        </div>
                         <button class="btn btn-primary w-100 fw-bold">Subscribe</button>
                     </form>
                 </div>

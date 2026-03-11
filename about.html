@@ -22,7 +22,7 @@
 
     <style>
         .page-header {
-            padding: 120px 0 80px;
+            padding: 120px 0 120px;
             background-color: var(--bg-body);
             border-bottom: 1px solid var(--border-color);
         }
@@ -32,7 +32,7 @@
 <body>
 
     <!-- Header Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
+    <nav class="navbar navbar-expand-md sticky-top bg-body border-bottom border-light border-opacity-10">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
                 <i class="bi bi-boxes fs-4"></i>
@@ -44,7 +44,7 @@
                 <i class="bi bi-list fs-1 text-body"></i>
             </button>
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-start bg-body" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header border-bottom">
                     <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
                         <li class="nav-item dropdown">
@@ -74,14 +74,14 @@
                         <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-md-0">
                         <a href="login.html" class="nav-link fw-bold">Login</a>
                         <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
                         <button
-                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-md-2"
                             style="width: 40px; height: 40px;" aria-label="Toggle Theme">
                             <i class="bi bi-moon fs-5 text-body"></i>
-                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                            <span class="theme-text d-md-none ms-2 text-body">Dark Mode</span>
                         </button>
                     </div>
                 </div>
@@ -90,11 +90,11 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="page-header text-center pb-0 border-0" id="about">
+    <header class="page-header text-center border-0" id="about">
         <div class="container">
             <span class="text-secondary fw-bold text-uppercase tracking-wide small d-block mb-2">Platform Info</span>
             <h1 class="display-4 fw-black tracking-tight mb-4 text-body">Everything Apps</h1>
-            <p class="lead text-muted mx-auto mb-5" style="max-width: 600px;">Learn about our mission, explore our
+            <p class="lead text-muted mx-auto mb-5 pb-4" style="max-width: 600px;">Learn about our mission, explore our
                 specialized services, read the latest
                 industry blogs, and get in touch in one place.</p>
         </div>
@@ -141,26 +141,26 @@
                 <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Our Foundation</span>
                 <h2 class="display-6 fw-black tracking-tight mb-0 text-body">Our Core Values</h2>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-4">
-                    <div class="card card-custom border-0 p-5 h-100">
-                        <div class="icon-box text-primary fs-3 mb-4"><i class="bi bi-shield-check"></i></div>
+                    <div class="card card-custom border-0 p-5 h-100 text-center">
+                        <div class="icon-box text-primary fs-3 mb-4 mx-auto"><i class="bi bi-shield-check"></i></div>
                         <h4 class="fw-bold mb-3 text-body">Security First</h4>
                         <p class="text-muted mb-0">Every app on our platform undergoes rigorous security checks to
                             ensure your data stays safe and private.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card card-custom border-0 p-5 h-100">
-                        <div class="icon-box text-secondary fs-3 mb-4"><i class="bi bi-people"></i></div>
+                    <div class="card card-custom border-0 p-5 h-100 text-center">
+                        <div class="icon-box text-secondary fs-3 mb-4 mx-auto"><i class="bi bi-people"></i></div>
                         <h4 class="fw-bold mb-3 text-body">User Centric</h4>
                         <p class="text-muted mb-0">We build for users, not algorithms. Our discovery engine prioritizes
                             quality and utility over advertising spend.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card card-custom border-0 p-5 h-100">
-                        <div class="icon-box text-tertiary fs-3 mb-4"><i class="bi bi-rocket-takeoff"></i></div>
+                    <div class="card card-custom border-0 p-5 h-100 text-center">
+                        <div class="icon-box text-tertiary fs-3 mb-4 mx-auto"><i class="bi bi-rocket-takeoff"></i></div>
                         <h4 class="fw-bold mb-3 text-body">Innovation Driven</h4>
                         <p class="text-muted mb-0">We actively seek out and spotlight the most innovative developers
                             pushing the boundaries of what's possible.</p>
@@ -177,7 +177,7 @@
                 <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Our Team</span>
                 <h2 class="display-6 fw-black tracking-tight mb-0 text-body">The People Behind Apps</h2>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="text-center">
                         <img src="https://i.pravatar.cc/150?u=10"
@@ -223,7 +223,7 @@
                 <p class="text-muted mx-auto" style="max-width: 600px;">We specialize in three core categories of
                     application development and curation, ensuring quality across the board.</p>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <!-- Educational Apps -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom border-0 h-100 p-5 text-center shadow-sm">
@@ -271,7 +271,7 @@
                 <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">Editorial</span>
                 <h2 class="display-6 fw-black tracking-tight mb-4 text-body">Latest Insights</h2>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <!-- Blog 1 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom border-0 h-100 p-0 overflow-hidden">
@@ -279,7 +279,7 @@
                             class="img-fluid" style="height: 200px; object-fit:cover;" alt="Education">
                         <div class="p-4 d-flex flex-column h-100">
                             <span
-                                class="badge bg-primary bg-opacity-10 text-primary align-self-start mb-3">Education</span>
+                                class="badge bg-primary bg-opacity-10 text-primary align-self-center mb-3">Education</span>
                             <h5 class="fw-bold mb-3 text-body">Best educational apps for university students</h5>
                             <p class="text-muted small flex-grow-1">A curated list of applications designed to manage
                                 schedules, track assignments, and aid intensive study sessions.</p>
@@ -295,7 +295,7 @@
                             class="img-fluid" style="height: 200px; object-fit:cover;" alt="Productivity">
                         <div class="p-4 d-flex flex-column h-100">
                             <span
-                                class="badge bg-secondary bg-opacity-10 text-secondary align-self-start mb-3">Productivity</span>
+                                class="badge bg-secondary bg-opacity-10 text-secondary align-self-center mb-3">Productivity</span>
                             <h5 class="fw-bold mb-3 text-body">Top productivity apps to organize your workflow</h5>
                             <p class="text-muted small flex-grow-1">Stop losing track of tasks. These proven kanban and
                                 list-making apps integrate perfectly with your desktop tools.</p>
@@ -310,7 +310,7 @@
                         <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=500"
                             class="img-fluid" style="height: 200px; object-fit:cover;" alt="AI Tech">
                         <div class="p-4 d-flex flex-column h-100">
-                            <span class="badge bg-tertiary bg-opacity-10 text-tertiary align-self-start mb-3">Tech
+                            <span class="badge bg-tertiary bg-opacity-10 text-tertiary align-self-center mb-3">Tech
                                 Trends</span>
                             <h5 class="fw-bold mb-3 text-body">AI apps trending in 2026 for mobile devices</h5>
                             <p class="text-muted small flex-grow-1">From real-time translation to generative art, here
@@ -481,50 +481,66 @@
     </section>
 
     <!-- Footer Design (4 Columns) - Same as index.html -->
+    <!-- 7. Footer Design (4 Columns) -->
     <footer class="footer">
         <div class="container pb-5">
             <div class="row g-5">
                 <!-- Column 1: Brand -->
                 <div class="col-lg-3 col-md-6">
-                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
-                        href="index.html">
-                        <i
-                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
-                        Apps
+                    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary mb-3" href="index.html">
+                        <i class="bi bi-boxes fs-4"></i>
+                        <span class="fs-4 tracking-tight text-body">Apps</span>
                     </a>
                     <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
                         downloading the world's best mobile applications safely.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white opacity-75 fs-5 hover-tertiary"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
                 </div>
-                <!-- Column 2, 3, 4 abbreviated -->
+
+                <!-- Column 2: Company -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Company</h5>
                     <ul class="list-unstyled mb-0">
-                        <li><a href="#about" class="footer-link">About Us</a></li>
-                        <li><a href="#services" class="footer-link">Our Services</a></li>
-                        <li><a href="#blogs" class="footer-link">Blogs</a></li>
+                        <li><a href="about.html#about" class="footer-link">About Us</a></li>
+                        <li><a href="about.html#services" class="footer-link">Our Services</a></li>
+                        <li><a href="about.html#blogs" class="footer-link">Blogs</a></li>
                         <li><a href="#" class="footer-link">Careers</a></li>
-                        <li><a href="#pricing" class="footer-link">Pricing Plans</a></li>
+                        <li><a href="about.html#pricing" class="footer-link">Pricing Plans</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 3: Support -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Support</h5>
                     <ul class="list-unstyled mb-0">
                         <li><a href="#" class="footer-link">Help Center</a></li>
                         <li><a href="#" class="footer-link">FAQ</a></li>
-                        <li><a href="#contact" class="footer-link">Contact Support</a></li>
+                        <li><a href="about.html#contact" class="footer-link">Contact Support</a></li>
                         <li><a href="#" class="footer-link">Terms & Conditions</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 4: Newsletter -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading">Newsletter</h5>
+                    <p class="opacity-75 small mb-3">Subscribe to get the latest app weekly updates directly to your
+                        inbox.</p>
                     <form onsubmit="event.preventDefault();" class="d-flex flex-column gap-2">
-                        <div class="input-group"><input type="email"
+                        <div class="input-group">
+                            <input type="email"
                                 class="form-control bg-body bg-opacity-10 border-secondary border-opacity-25 text-white"
-                                placeholder="Email address" required></div><button
-                            class="btn btn-primary w-100 fw-bold">Subscribe</button>
+                                placeholder="Email address" required>
+                        </div>
+                        <button class="btn btn-primary w-100 fw-bold">Subscribe</button>
                     </form>
                 </div>
             </div>
+
             <div class="text-center pt-4 mt-5 border-top border-secondary border-opacity-25 opacity-50 small">
                 © 2026 Apps. All rights reserved.
             </div>

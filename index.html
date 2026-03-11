@@ -26,7 +26,7 @@
 <body>
 
     <!-- Header Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body border-bottom border-light border-opacity-10">
+    <nav class="navbar navbar-expand-md sticky-top bg-body border-bottom border-light border-opacity-10">
         <div class="container">
             <!-- Brand -->
             <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary" href="index.html">
@@ -41,7 +41,7 @@
             </button>
 
             <!-- Offcanvas Menu (Mobile + Desktop routing) -->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-start bg-body" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center gap-2"
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
                         <li class="nav-item dropdown">
@@ -71,15 +71,15 @@
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+                    <div class="d-flex align-items-center gap-3 mt-4 mt-md-0">
                         <a href="login.html" class="nav-link fw-bold">Login</a>
                         <a href="dashboard.html" class="btn btn-primary rounded-pill px-4">Dashboard</a>
                         <!-- Theme Toggle Button -->
                         <button
-                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-lg-2"
+                            class="theme-toggle-btn theme-toggle btn border border-secondary border-opacity-25 rounded-circle d-flex align-items-center justify-content-center p-0 ms-md-2"
                             style="width: 40px; height: 40px;" aria-label="Toggle Theme">
                             <i class="bi bi-moon fs-5 text-body"></i>
-                            <span class="theme-text d-lg-none ms-2 text-body">Dark Mode</span>
+                            <span class="theme-text d-md-none ms-2 text-body">Dark Mode</span>
                         </button>
                     </div>
                 </div>
@@ -118,19 +118,7 @@
                             class="img-fluid rounded-4 shadow-lg w-100" alt="App Store Preview"
                             style="object-fit: cover; aspect-ratio: 4/3;">
 
-                        <!-- Floating Glass Card Over Image -->
-                        <div class="position-absolute bottom-0 start-0 translate-middle p-3 bg-body border border-secondary border-opacity-10 rounded-4 shadow-lg d-none d-md-block"
-                            style="backdrop-filter: blur(10px);">
-                            <div class="d-flex align-items-center gap-3">
-                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
-                                    <i class="bi bi-shield-check fs-2"></i>
-                                </div>
-                                <div class="text-start pe-4">
-                                    <h6 class="fw-bold mb-0 text-body">100% Secure</h6>
-                                    <small class="text-muted">Verified Downloads</small>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -150,23 +138,20 @@
                     Apps <i class="bi bi-arrow-right"></i></a>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <!-- App 1: StudyMate -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom border-0 p-3 h-100">
-                        <div class="d-flex align-items-start gap-3">
-                            <img src="assets/edu_apps_placeholder_1772708315034.png" alt="StudyMate Icon"
-                                class="app-icon-img">
-                            <div class="flex-grow-1">
-                                <h5 class="fw-bold mb-1 text-body">StudyMate</h5>
-                                <span class="badge-app rounded-pill small mb-2 d-inline-block">Education</span>
-                                <div class="d-flex align-items-center gap-1 text-tertiary small fw-bold">
-                                    <i class="bi bi-star-fill"></i> 4.8
-                                    <span class="text-muted fw-normal ms-1">(12k reviews)</span>
-                                </div>
-                            </div>
+                    <div class="card card-custom border-0 p-4 h-100 d-flex flex-column text-center">
+                        <img src="assets/edu_apps_placeholder_1772708315034.png" alt="StudyMate Icon"
+                            class="app-icon-img mb-3 mx-auto">
+                        <h5 class="fw-bold mb-2 text-body">StudyMate</h5>
+                        <span class="badge-app rounded-pill small mb-2 d-inline-block mx-auto">Education</span>
+                        <div
+                            class="d-flex justify-content-center align-items-center gap-1 text-tertiary small fw-bold mb-3">
+                            <i class="bi bi-star-fill"></i> 4.8
+                            <span class="text-muted fw-normal ms-1">(12k reviews)</span>
                         </div>
-                        <p class="text-muted small mt-3 mb-4 flex-grow-1">The ultimate companion for students. Take
+                        <p class="text-muted small mb-4 flex-grow-1">The ultimate companion for students. Take
                             notes, organize schedules, and collaborate.</p>
                         <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold">Get</a>
                     </div>
@@ -174,20 +159,17 @@
 
                 <!-- App 2: NewsFlow -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom border-0 p-3 h-100">
-                        <div class="d-flex align-items-start gap-3">
-                            <img src="assets/info_apps_placeholder_1772708329588.png" alt="NewsFlow Icon"
-                                class="app-icon-img">
-                            <div class="flex-grow-1">
-                                <h5 class="fw-bold mb-1 text-body">NewsFlow</h5>
-                                <span class="badge-app rounded-pill small mb-2 d-inline-block">Information</span>
-                                <div class="d-flex align-items-center gap-1 text-tertiary small fw-bold">
-                                    <i class="bi bi-star-fill"></i> 4.5
-                                    <span class="text-muted fw-normal ms-1">(8k reviews)</span>
-                                </div>
-                            </div>
+                    <div class="card card-custom border-0 p-4 h-100 d-flex flex-column text-center">
+                        <img src="assets/info_apps_placeholder_1772708329588.png" alt="NewsFlow Icon"
+                            class="app-icon-img mb-3 mx-auto">
+                        <h5 class="fw-bold mb-2 text-body">NewsFlow</h5>
+                        <span class="badge-app rounded-pill small mb-2 d-inline-block mx-auto">Information</span>
+                        <div
+                            class="d-flex justify-content-center align-items-center gap-1 text-tertiary small fw-bold mb-3">
+                            <i class="bi bi-star-fill"></i> 4.5
+                            <span class="text-muted fw-normal ms-1">(8k reviews)</span>
                         </div>
-                        <p class="text-muted small mt-3 mb-4 flex-grow-1">Curated global news tailored to your
+                        <p class="text-muted small mb-4 flex-grow-1">Curated global news tailored to your
                             interests. Real-time alerts and deep analysis.</p>
                         <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold">Get</a>
                     </div>
@@ -195,21 +177,18 @@
 
                 <!-- App 3: GameZone -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom border-0 p-3 h-100">
-                        <div class="d-flex align-items-start gap-3">
-                            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=200"
-                                alt="GameZone Icon" class="app-icon-img">
-                            <div class="flex-grow-1">
-                                <h5 class="fw-bold mb-1 text-body">GameZone</h5>
-                                <span class="badge-app rounded-pill small mb-2 d-inline-block"
-                                    style="color: var(--tertiary); background: rgba(245, 158, 11, 0.1);">Entertainment</span>
-                                <div class="d-flex align-items-center gap-1 text-tertiary small fw-bold">
-                                    <i class="bi bi-star-fill"></i> 4.9
-                                    <span class="text-muted fw-normal ms-1">(45k reviews)</span>
-                                </div>
-                            </div>
+                    <div class="card card-custom border-0 p-4 h-100 d-flex flex-column text-center">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80&w=200"
+                            alt="GameZone Icon" class="app-icon-img mb-3 mx-auto">
+                        <h5 class="fw-bold mb-2 text-body">GameZone</h5>
+                        <span class="badge-app rounded-pill small mb-2 d-inline-block mx-auto"
+                            style="color: var(--tertiary); background: rgba(245, 158, 11, 0.1);">Entertainment</span>
+                        <div
+                            class="d-flex justify-content-center align-items-center gap-1 text-tertiary small fw-bold mb-3">
+                            <i class="bi bi-star-fill"></i> 4.9
+                            <span class="text-muted fw-normal ms-1">(45k reviews)</span>
                         </div>
-                        <p class="text-muted small mt-3 mb-4 flex-grow-1">Cloud gaming hub. Play AAA titles directly on
+                        <p class="text-muted small mb-4 flex-grow-1">Cloud gaming hub. Play AAA titles directly on
                             your mobile device instantly.</p>
                         <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold">Get</a>
                     </div>
@@ -217,23 +196,20 @@
 
                 <!-- App 4: LearnCode -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom border-0 p-3 h-100">
-                        <div class="d-flex align-items-start gap-3">
-                            <!-- Placeholder icon -->
-                            <div
-                                class="app-icon-img bg-primary text-white d-flex align-items-center justify-content-center fs-1">
-                                <i class="bi bi-code-slash"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="fw-bold mb-1 text-body">LearnCode</h5>
-                                <span class="badge-app rounded-pill small mb-2 d-inline-block">Education</span>
-                                <div class="d-flex align-items-center gap-1 text-tertiary small fw-bold">
-                                    <i class="bi bi-star-fill"></i> 4.7
-                                    <span class="text-muted fw-normal ms-1">(19k reviews)</span>
-                                </div>
-                            </div>
+                    <div class="card card-custom border-0 p-4 h-100 d-flex flex-column text-center">
+                        <!-- Placeholder icon -->
+                        <div
+                            class="app-icon-img bg-primary text-white d-flex align-items-center justify-content-center fs-1 mb-3 mx-auto">
+                            <i class="bi bi-code-slash"></i>
                         </div>
-                        <p class="text-muted small mt-3 mb-4 flex-grow-1">Interactive programming courses. Learn Python,
+                        <h5 class="fw-bold mb-2 text-body">LearnCode</h5>
+                        <span class="badge-app rounded-pill small mb-2 d-inline-block mx-auto">Education</span>
+                        <div
+                            class="d-flex justify-content-center align-items-center gap-1 text-tertiary small fw-bold mb-3">
+                            <i class="bi bi-star-fill"></i> 4.7
+                            <span class="text-muted fw-normal ms-1">(19k reviews)</span>
+                        </div>
+                        <p class="text-muted small mb-4 flex-grow-1">Interactive programming courses. Learn Python,
                             Java, and Web Dev on the go.</p>
                         <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold">Get</a>
                     </div>
@@ -241,23 +217,20 @@
 
                 <!-- App 5: FitTrack -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom border-0 p-3 h-100">
-                        <div class="d-flex align-items-start gap-3">
-                            <div
-                                class="app-icon-img bg-secondary text-white d-flex align-items-center justify-content-center fs-1">
-                                <i class="bi bi-activity"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="fw-bold mb-1 text-body">FitTrack</h5>
-                                <span class="badge-app rounded-pill small mb-2 d-inline-block"
-                                    style="color: var(--primary); background: rgba(79, 70, 229, 0.1);">Health</span>
-                                <div class="d-flex align-items-center gap-1 text-tertiary small fw-bold">
-                                    <i class="bi bi-star-fill"></i> 4.6
-                                    <span class="text-muted fw-normal ms-1">(22k reviews)</span>
-                                </div>
-                            </div>
+                    <div class="card card-custom border-0 p-4 h-100 d-flex flex-column text-center">
+                        <div
+                            class="app-icon-img bg-secondary text-white d-flex align-items-center justify-content-center fs-1 mb-3 mx-auto">
+                            <i class="bi bi-activity"></i>
                         </div>
-                        <p class="text-muted small mt-3 mb-4 flex-grow-1">Track your runs, set fitness goals, and
+                        <h5 class="fw-bold mb-2 text-body">FitTrack</h5>
+                        <span class="badge-app rounded-pill small mb-2 d-inline-block mx-auto"
+                            style="color: var(--primary); background: rgba(79, 70, 229, 0.1);">Health</span>
+                        <div
+                            class="d-flex justify-content-center align-items-center gap-1 text-tertiary small fw-bold mb-3">
+                            <i class="bi bi-star-fill"></i> 4.6
+                            <span class="text-muted fw-normal ms-1">(22k reviews)</span>
+                        </div>
+                        <p class="text-muted small mb-4 flex-grow-1">Track your runs, set fitness goals, and
                             monitor your daily caloric intake easily.</p>
                         <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold">Get</a>
                     </div>
@@ -265,23 +238,20 @@
 
                 <!-- App 6: MusicPlay -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom border-0 p-3 h-100">
-                        <div class="d-flex align-items-start gap-3">
-                            <div
-                                class="app-icon-img bg-tertiary text-white d-flex align-items-center justify-content-center fs-1">
-                                <i class="bi bi-music-note-beamed"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="fw-bold mb-1 text-body">MusicPlay</h5>
-                                <span class="badge-app rounded-pill small mb-2 d-inline-block"
-                                    style="color: var(--tertiary); background: rgba(245, 158, 11, 0.1);">Entertainment</span>
-                                <div class="d-flex align-items-center gap-1 text-tertiary small fw-bold">
-                                    <i class="bi bi-star-fill"></i> 4.9
-                                    <span class="text-muted fw-normal ms-1">(105k reviews)</span>
-                                </div>
-                            </div>
+                    <div class="card card-custom border-0 p-4 h-100 d-flex flex-column text-center">
+                        <div
+                            class="app-icon-img bg-tertiary text-white d-flex align-items-center justify-content-center fs-1 mb-3 mx-auto">
+                            <i class="bi bi-music-note-beamed"></i>
                         </div>
-                        <p class="text-muted small mt-3 mb-4 flex-grow-1">High-fidelity music streaming. Millions of
+                        <h5 class="fw-bold mb-2 text-body">MusicPlay</h5>
+                        <span class="badge-app rounded-pill small mb-2 d-inline-block mx-auto"
+                            style="color: var(--tertiary); background: rgba(245, 158, 11, 0.1);">Entertainment</span>
+                        <div
+                            class="d-flex justify-content-center align-items-center gap-1 text-tertiary small fw-bold mb-3">
+                            <i class="bi bi-star-fill"></i> 4.9
+                            <span class="text-muted fw-normal ms-1">(105k reviews)</span>
+                        </div>
+                        <p class="text-muted small mb-4 flex-grow-1">High-fidelity music streaming. Millions of
                             tracks and personalized AI playlists.</p>
                         <a href="#" class="btn btn-outline-primary w-100 rounded-pill fw-bold">Get</a>
                     </div>
@@ -298,39 +268,39 @@
                 <h2 class="display-6 fw-bold m-0 text-body">Browse by Category</h2>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-6 col-lg-3">
                     <a href="services.html" class="text-decoration-none">
-                        <div class="card card-custom card-category-premium p-4 text-center h-100">
+                        <div class="card card-custom card-category-premium p-3 p-md-4 text-center h-100">
                             <i class="bi bi-book fs-1 mb-3"></i>
-                            <h5 class="fw-bold mb-0">Educational</h5>
+                            <h5 class="fw-bold mb-0 fs-6 fs-md-5">Educational</h5>
                             <p class="small mt-2 mb-0">Learn & Grow</p>
                         </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-3">
                     <a href="services.html" class="text-decoration-none">
-                        <div class="card card-custom card-category-premium p-4 text-center h-100">
+                        <div class="card card-custom card-category-premium p-3 p-md-4 text-center h-100">
                             <i class="bi bi-globe fs-1 mb-3"></i>
-                            <h5 class="fw-bold mb-0">Informational</h5>
+                            <h5 class="fw-bold mb-0 fs-6 fs-md-5">Informational</h5>
                             <p class="small mt-2 mb-0">News & Weather</p>
                         </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-3">
                     <a href="services.html" class="text-decoration-none">
-                        <div class="card card-custom card-category-premium p-4 text-center h-100">
+                        <div class="card card-custom card-category-premium p-3 p-md-4 text-center h-100">
                             <i class="bi bi-controller fs-1 mb-3"></i>
-                            <h5 class="fw-bold mb-0">Entertainment</h5>
+                            <h5 class="fw-bold mb-0 fs-6 fs-md-5">Entertainment</h5>
                             <p class="small mt-2 mb-0">Games & Media</p>
                         </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-3">
                     <a href="services.html" class="text-decoration-none">
-                        <div class="card card-custom card-category-premium p-4 text-center h-100">
+                        <div class="card card-custom card-category-premium p-3 p-md-4 text-center h-100">
                             <i class="bi bi-briefcase fs-1 mb-3"></i>
-                            <h5 class="fw-bold mb-0">Productivity</h5>
+                            <h5 class="fw-bold mb-0 fs-6 fs-md-5">Productivity</h5>
                             <p class="small mt-2 mb-0">Tools & Utilities</p>
                         </div>
                     </a>
@@ -348,28 +318,36 @@
 
             <div class="row g-4 offset-lg-1 col-lg-10 mx-auto">
                 <div class="col-md-4 text-center">
-                    <div class="icon-box icon-box-primary text-primary">
-                        <i class="bi bi-shield-check"></i>
+                    <div class="card card-custom border-0 p-4 h-100 mx-auto" style="max-width: 320px;">
+                        <div class="icon-box icon-box-primary text-primary mx-auto mb-4">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h5 class="fw-bold text-body">Verified Apps</h5>
+                        <p class="text-muted small mb-0">Every app undergoes a strict manual review process to ensure
+                            clean, malware-free code.</p>
                     </div>
-                    <h5 class="fw-bold text-body">Verified Apps</h5>
-                    <p class="text-muted small">Every app undergoes a strict manual review process to ensure clean,
-                        malware-free code.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="icon-box text-secondary" style="background-color: rgba(6, 182, 212, 0.1);">
-                        <i class="bi bi-cloud-arrow-down"></i>
+                    <div class="card card-custom border-0 p-4 h-100 mx-auto" style="max-width: 320px;">
+                        <div class="icon-box text-secondary mx-auto mb-4"
+                            style="background-color: rgba(6, 182, 212, 0.1);">
+                            <i class="bi bi-cloud-arrow-down"></i>
+                        </div>
+                        <h5 class="fw-bold text-body">Safe Downloads</h5>
+                        <p class="text-muted small mb-0">Lightning-fast CDN delivery ensures you get your software
+                            quickly and without interruption.</p>
                     </div>
-                    <h5 class="fw-bold text-body">Safe Downloads</h5>
-                    <p class="text-muted small">Lightning-fast CDN delivery ensures you get your software quickly and
-                        without interruption.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="icon-box text-tertiary" style="background-color: rgba(245, 158, 11, 0.1);">
-                        <i class="bi bi-arrow-repeat"></i>
+                    <div class="card card-custom border-0 p-4 h-100 mx-auto" style="max-width: 320px;">
+                        <div class="icon-box text-tertiary mx-auto mb-4"
+                            style="background-color: rgba(245, 158, 11, 0.1);">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <h5 class="fw-bold text-body">Latest Updates</h5>
+                        <p class="text-muted small mb-0">Get immediate notifications when developers push bug fixes or
+                            structural enhancements.</p>
                     </div>
-                    <h5 class="fw-bold text-body">Latest Updates</h5>
-                    <p class="text-muted small">Get immediate notifications when developers push bug fixes or structural
-                        enhancements.</p>
                 </div>
             </div>
         </div>
@@ -383,20 +361,21 @@
                 <h2 class="display-6 fw-bold m-0 text-body">What Our Users Say</h2>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-custom border-0 p-4 h-100">
-                        <div class="text-tertiary mb-3">
+                        <div class="text-tertiary mb-3 text-center">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-fill"></i>
                         </div>
-                        <p class="text-muted mb-4 flex-grow-1">"Apps completely changed how I find productivity tools.
+                        <p class="text-muted mb-4 flex-grow-1 text-center">"Apps completely changed how I find
+                            productivity tools.
                             The verified reviews save me so much time avoiding terrible clones."</p>
-                        <div class="d-flex align-items-center gap-3">
+                        <div class="d-flex flex-column align-items-center gap-2">
                             <img src="https://i.pravatar.cc/100?img=1" alt="User" class="rounded-circle" width="45"
                                 height="45">
-                            <div>
+                            <div class="text-center">
                                 <h6 class="fw-bold mb-0 text-body">Sarah Jenkins</h6>
                                 <small class="text-muted">Pro User</small>
                             </div>
@@ -405,17 +384,18 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-custom border-0 p-4 h-100">
-                        <div class="text-tertiary mb-3">
+                        <div class="text-tertiary mb-3 text-center">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-half"></i>
                         </div>
-                        <p class="text-muted mb-4 flex-grow-1">"The dark mode is gorgeous and the site runs incredibly
+                        <p class="text-muted mb-4 flex-grow-1 text-center">"The dark mode is gorgeous and the site runs
+                            incredibly
                             fast. I love the simple categorical breakdown of utility apps."</p>
-                        <div class="d-flex align-items-center gap-3">
+                        <div class="d-flex flex-column align-items-center gap-2">
                             <img src="https://i.pravatar.cc/100?img=33" alt="User" class="rounded-circle" width="45"
                                 height="45">
-                            <div>
+                            <div class="text-center">
                                 <h6 class="fw-bold mb-0 text-body">Michael Scott</h6>
                                 <small class="text-muted">Student</small>
                             </div>
@@ -424,17 +404,18 @@
                 </div>
                 <div class="col-md-6 col-lg-4 d-none d-lg-block">
                     <div class="card card-custom border-0 p-4 h-100">
-                        <div class="text-tertiary mb-3">
+                        <div class="text-tertiary mb-3 text-center">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-fill"></i>
                         </div>
-                        <p class="text-muted mb-4 flex-grow-1">"As an independent app developer, publishing on Apps
+                        <p class="text-muted mb-4 flex-grow-1 text-center">"As an independent app developer, publishing
+                            on Apps
                             was the easiest experience I've had. The dashboard is top-notch."</p>
-                        <div class="d-flex align-items-center gap-3">
+                        <div class="d-flex flex-column align-items-center gap-2">
                             <img src="https://i.pravatar.cc/100?img=12" alt="User" class="rounded-circle" width="45"
                                 height="45">
-                            <div>
+                            <div class="text-center">
                                 <h6 class="fw-bold mb-0 text-body">David Chen</h6>
                                 <small class="text-muted">App Developer</small>
                             </div>
@@ -463,13 +444,13 @@
                 <span class="text-primary fw-bold text-uppercase tracking-wide small d-block mb-2">User Stories</span>
                 <h2 class="display-6 fw-black tracking-tight mb-0 text-body">What Our Users Say</h2>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom border-0 p-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-4">
                             <img src="https://i.pravatar.cc/150?u=1" class="rounded-circle"
                                 style="width: 50px; height: 50px;" alt="User">
-                            <div>
+                            <div class="text-center">
                                 <h6 class="fw-bold mb-0 text-body">Sarah Johnson</h6>
                                 <span class="text-muted small">Tech Enthusiast</span>
                             </div>
@@ -480,10 +461,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-custom border-0 p-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-4">
                             <img src="https://i.pravatar.cc/150?u=2" class="rounded-circle"
                                 style="width: 50px; height: 50px;" alt="User">
-                            <div>
+                            <div class="text-center">
                                 <h6 class="fw-bold mb-0 text-body">Michael Chen</h6>
                                 <span class="text-muted small">Developer</span>
                             </div>
@@ -494,10 +475,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
                     <div class="card card-custom border-0 p-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="d-flex flex-column align-items-center gap-2 mb-4">
                             <img src="https://i.pravatar.cc/150?u=3" class="rounded-circle"
                                 style="width: 50px; height: 50px;" alt="User">
-                            <div>
+                            <div class="text-center">
                                 <h6 class="fw-bold mb-0 text-body">Elena Rodriguez</h6>
                                 <span class="text-muted small">Digital Nomad</span>
                             </div>
@@ -516,11 +497,9 @@
             <div class="row g-5">
                 <!-- Column 1: Brand -->
                 <div class="col-lg-3 col-md-6">
-                    <a class="d-flex align-items-center gap-2 fw-bold text-white text-decoration-none fs-4 mb-3"
-                        href="index.html">
-                        <i
-                            class="bi bi-boxes text-primary border border-secondary border-opacity-25 p-2 rounded-3 bg-body bg-opacity-10"></i>
-                        Apps
+                    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary mb-3" href="index.html">
+                        <i class="bi bi-boxes fs-4"></i>
+                        <span class="fs-4 tracking-tight text-body">Apps</span>
                     </a>
                     <p class="opacity-75 small mb-4 pe-lg-4">Your trusted platform for discovering, reviewing, and
                         downloading the world's best mobile applications safely.</p>
