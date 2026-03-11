@@ -571,3 +571,97 @@ body.dark-mode .offcanvas .btn-close {
         mask-image: none;
     }
 }
+
+/* Confirmation Modal */
+.app-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.app-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.app-modal-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    transform: translateY(20px) scale(0.95);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6);
+}
+
+.app-modal-overlay.active .app-modal-card {
+    transform: translateY(0) scale(1);
+}
+
+.dark-mode .app-modal-card {
+    background: rgba(15, 23, 42, 0.6);
+}
+
+.app-modal-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: white;
+    letter-spacing: -0.01em;
+    text-transform: lowercase;
+}
+
+.app-modal-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.app-modal-btn {
+    padding: 0.6rem 1.8rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.app-modal-btn-yes {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    box-shadow: 0 8px 15px -3px rgba(79, 70, 229, 0.3);
+}
+
+.app-modal-btn-yes:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 20px -5px rgba(79, 70, 229, 0.4);
+}
+
+.app-modal-btn-no {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-modal-btn-no:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}

@@ -42,4 +42,57 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // 3. App Confirmation Modal Logic
+    const initAppModal = () => {
+        // Create modal element if it doesn't exist
+        let modalOverlay = document.querySelector('.app-modal-overlay');
+        if (!modalOverlay) {
+            modalOverlay = document.createElement('div');
+            modalOverlay.className = 'app-modal-overlay';
+            modalOverlay.innerHTML = `
+                <div class="app-modal-card">
+                    <h2 class="app-modal-title">do you want this app or not</h2>
+                    <div class="app-modal-btns">
+                        <button class="app-modal-btn app-modal-btn-yes">Yes</button>
+                        <button class="app-modal-btn app-modal-btn-no">No</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modalOverlay);
+
+            // Button listeners
+            const yesBtn = modalOverlay.querySelector('.app-modal-btn-yes');
+            const noBtn = modalOverlay.querySelector('.app-modal-btn-no');
+
+            const closeModal = () => {
+                modalOverlay.classList.remove('active');
+            };
+
+            yesBtn.addEventListener('click', () => {
+                alert('App download started!');
+                closeModal();
+            });
+
+            noBtn.addEventListener('click', closeModal);
+
+            // Close on overlay click
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) closeModal();
+            });
+        }
+
+        // Attach to all 'Get' buttons
+        const getButtons = document.querySelectorAll('button');
+        getButtons.forEach(btn => {
+            if (btn.textContent.trim().toLowerCase() === 'get') {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    modalOverlay.classList.add('active');
+                });
+            }
+        });
+    };
+
+    initAppModal();
 });
